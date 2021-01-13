@@ -17,9 +17,9 @@ a.link {
     border-radius: 3px;
     border: 1px solid #233741;
     display: inline-block;
-    padding: 5px 0;
+    padding: 9.5px 0;
     width: 100px;
-    font-size: 13px;
+    font-size: 1.3rem;
     text-align: center;
 }
 
@@ -38,6 +38,10 @@ header {
 	max-width:1140px;
 	margin:0 auto;
 	padding:20px 0;
+}
+
+header .logo img { 
+	width: 190px;
 }
 
 header nav.menu {
@@ -72,34 +76,36 @@ main .half {
 	height:400px;
 	width:calc(100%/2);
 	float:left;
+	position: relative;
 }
 
 main .half a {
 	width:100%;
 	height:100%;
-	position:absolute;
-	top:0;
-	left:0;
 }
 
 main .half:before {
-	font-size:25px;
+	font-size:2.5rem;
 	font-weight:500;
 	position: absolute;
-	bottom:30px;
 	letter-spacing: 3px;
+	max-width:570px;
+	width:100%;
+	bottom:8%;
+	display: inline-block;
 }	
 
 main .left:before {
 	content:'WEB PUBLISH';
 	color:#79C8A4;
-	left:40px;
+	right:0;
 }
 
 main .right:before {
 	content:'DESIGN';
 	color:#fff;
-	right:40px;
+	left:0;
+	text-align: right;
 }
 
 main .main-img {
@@ -118,14 +124,20 @@ main .main-img {
 
 .works {
 	width:calc(100% - 195px);
-	margin: 0 auto;
+	margin: 2rem auto;
 }
+
 .works article {
 	display: inline-block;
 	width: 100%;
 	height: 100%;
-	margin:3em 0;
+	margin:0 0 8rem 0;
 }
+
+.works article:last-child {
+	margin:0;
+}
+
 .works article .works-item {
     width: 50%;
     float:left;
@@ -142,15 +154,18 @@ main .main-img {
 	width: 30vw;
 	max-height: 300px;
 	max-width:300px;
-	border-radius: 40% 60% 65% 35% / 40% 45% 55% 60%;
+	min-width: 160px;
+	min-height: 160px;
+	/*border-radius: 40% 60% 65% 35% / 40% 45% 55% 60%;*/
+	border-radius: 100%;
 	background-color: #dedede;
 	position: absolute;
-	top:13%;
-	left:18%;
+	top:5%;
+	left:20%;
 	transform: translate(-50%, -50%);
 	transition: all 0.5s;
-	z-index: -1;
 	animation: spin 6s linear infinite;
+	z-index: -1;
 }
 
 @keyframes spin {
@@ -177,16 +192,16 @@ main .main-img {
 
 .works article .works-img .img-1 {
 	 background-image: url("https://randhk.github.io/annie/img/annie_sec_red.png");
-	 background-position: 45px 35px;
+	 background-position: 50px 30px;
 }
 
 .works article .works-img .img-2 {
 	 background-image: url("https://randhk.github.io/annie/img/annie_sec_ad.png");
-	 background-position: 20px 20px;
+	 background-position: 0 25px;
 }
 
 .works article .works-desc {
-    padding:2.5em;
+    padding:2.5rem;
 }
 
 .works article.works-item-wrap-1 .works-desc {
@@ -199,11 +214,11 @@ main .main-img {
 
 .works article .works-desc .num{
 	color:#DEDEDE;
-	font-size: 55px;
+	font-size: 5.5rem;
 }
 
 .works article .works-desc h2 {
-	font-size: 26px;
+	font-size: 2.6rem;
 	font-weight: 500;
 	margin:10px 0;
 }
@@ -213,14 +228,22 @@ main .main-img {
     line-height: 1.5;
 }
 
+.works article .works-desc .link-wrap {
+	margin-top: 30px;
+}
+
+
 .hireme {
     text-align: center;
+    margin:4rem 0 6rem 0;
+    display: inline-block;
+    width: 100%;
 }
 
 .hireme .chara {
 	background-image: url("https://randhk.github.io/annie/img/annie_aside_img.svg");
 	background-repeat: no-repeat;
-	background-position: 0 -106px;
+	background-position: 0 -39px;
 	display: inline-block;
 	width:90px;
 	height:106px;
@@ -230,6 +253,7 @@ main .main-img {
     font-size: 35px;
     letter-spacing: 4px;
     font-weight: bold;
+    margin:40px 0;
 }
 
 .hireme .contact {
@@ -238,7 +262,7 @@ main .main-img {
 }
 
 .hireme .contact li {
-	margin-right: 15px;
+	margin-right: 25px;
 	background-repeat: no-repeat;
 	display: inline-block;
 	width: 40px;
@@ -254,8 +278,156 @@ main .main-img {
 	background-position:0 -185px;
 }
 
+.hireme .contact li:last-child {
+	margin-right: 0;
+}
+
+footer {
+    background-color: #233741;
+    padding: 3rem 0 2rem 0;
+    display: inline-block;
+    width: 100%;
+}
+
+footer .foot-inner {
+    max-width: 1140px;
+    margin: 0 auto;
+    text-align: right;
+}
+
+footer .copyright {
+    font-size: 13px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+
+
+
 
 @media screen and (max-width:768px) {
+	header {
+		padding:2rem 1rem;
+	}
 
+	header .logo img { 
+		width: 100px;
+	}
+
+	header nav.menu {
+		padding: 5px 0 0 0;
+	}	
+
+	header nav.menu a {
+	    font-size: 1.3rem;
+	}
+W
+	main .half {
+		height:200px;
+		background-image: none;
+	}
+
+	main .half:before {
+		font-size:1.4rem;
+		position: absolute;
+		top:85%;
+		left:50%;
+		bottom: auto; 
+		max-width: 130px;
+		width: 100%;
+		padding:4%;  
+		text-align: center;
+		border-radius: 16px;
+		transform: translate(-50%, -50%);
+		white-space: nowrap;
+	}	
+
+	main .left:before {
+		color:#FDF3F1;	
+		background-color: #79C8A4;
+	}
+
+	main .right:before {
+		color:#79C8A4;
+		background-color:#FDF3F1;
+	}
+
+
+	main .main-img {
+		background-image:url("https://randhk.github.io/annie/img/annie_main_img_mb.svg");
+		left:50%;
+		top:45%;
+		height:110px;
+		max-width:300px;
+	}
+
+	.works {
+	    width: calc(100% - 8rem);
+	    margin: 4rem auto;
+	}
+
+	.works article .works-item {
+		width: 100%;
+		float: initial;
+		height: 250px;
+		text-align: left;
+	}
+
+	.works article.works-item-wrap-1 .works-desc {
+		text-align: left;
+	}
+
+	.works article.works-item-wrap-2 {
+		display: flex;
+		flex-flow: wrap;
+	}
+
+	.works article .works-img .img-1 {
+	 	background-position: center;
+	}
+
+	.works article .works-img .img-2 {
+	    background-position: center;
+	}
+
+	.works article.works-item-wrap-2 .works-img {
+		order:1;
+	}
+
+	.works article.works-item-wrap-2 .works-desc {
+		order:2;
+	}
+
+	.works article .works-desc {
+	    padding: 0;
+	}
+
+	.works article .works-desc .num {
+		float: right;
+		margin-left: 10px;
+	}
+
+	.works article.works-item-wrap-1 .works-desc .num {
+		margin-top: -5px;
+	}
+
+	.works article .works-desc .link-wrap {
+	    text-align: center;
+	}
+
+	.hireme {
+		margin: 7rem 0 6rem 0;
+	}
+
+	.hireme .words {
+		font-size: 5.5vw;
+		padding : 0 2rem;
+		letter-spacing: 3px;
+	}
+
+	footer .foot-inner {
+	    text-align: center;
+	}
 
 }
+
