@@ -109,7 +109,7 @@ main .right:before {
 }
 
 main .main-img {
-	background-image:url("https://randhk.github.io/annie/img/annie_main_img_pc.svg");
+	background-image:none;
 	position:absolute;
 	left:50%;
 	top:63%;
@@ -117,14 +117,52 @@ main .main-img {
 	height:318px;
 	max-width:530px;
 	width:100%;
-	display:inline-block;
+	display: inline;splay:inline-block;
 	background-repeat:no-repeat;
 	background-size: contain;
 }
 
+main .main-img #pc-img {
+	max-width:538px;
+	width: 100%;
+}
+
+main .main-img #pc-img .spinner {
+	animation: spin 6s linear infinite;
+	transform-origin: 25% 77%;
+}
+
+main .main-img #pc-img .spinner-re {
+	animation: spin 3s linear infinite;
+	-webkit-animation-direction:reverse;
+	transform-origin: 13.5% 62.5%;
+}
+
+
+
+@keyframes spin {
+	from{
+		transform: rotate(0);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes step {
+	from{
+		opacity:0;
+	}
+	to{
+		opacity:1;
+	}
+}
+
+
+
 .works {
 	width:calc(100% - 195px);
-	margin: 2rem auto;
+	margin: 10rem auto 0 auto;
 }
 
 .works article {
@@ -154,28 +192,21 @@ main .main-img {
 	width: 30vw;
 	max-height: 300px;
 	max-width:300px;
-	min-width: 160px;
-	min-height: 160px;
+	min-width: 200px;
+	min-height: 200px;
 	/*border-radius: 40% 60% 65% 35% / 40% 45% 55% 60%;*/
 	border-radius: 100%;
 	background-color: #dedede;
 	position: absolute;
-	top:5%;
-	left:20%;
+	top:50%;
+	left:50%;
 	transform: translate(-50%, -50%);
 	transition: all 0.5s;
-	animation: spin 6s linear infinite;
+	/*animation: spin 6s linear infinite;*/
 	z-index: -1;
 }
 
-@keyframes spin {
-	0%{
-		transform: rotate(0);
-	}
-	100%{
-		transform: rotate(360deg);
-	}
-}
+
 
 .works article.works-item-wrap-1:hover .works-img .circle,
 .works article.works-item-wrap-2:hover .works-img .circle {
@@ -192,24 +223,17 @@ main .main-img {
 
 .works article .works-img .img-1 {
 	 background-image: url("https://randhk.github.io/annie/img/annie_sec_red.png");
-	 background-position: 50px 30px;
+	 background-position: center;
 }
 
 .works article .works-img .img-2 {
 	 background-image: url("https://randhk.github.io/annie/img/annie_sec_ad.png");
-	 background-position: 0 25px;
+	 background-position: center;
 }
 
 .works article .works-desc {
     padding:2.5rem;
-}
-
-.works article.works-item-wrap-1 .works-desc {
     text-align: right;
-}
-
-.works article.works-item-wrap-2 .works-desc {
-    text-align: left;
 }
 
 .works article .works-desc .num{
@@ -220,7 +244,7 @@ main .main-img {
 .works article .works-desc h2 {
 	font-size: 2.6rem;
 	font-weight: 500;
-	margin:10px 0;
+	margin:20px 0 10px 0;
 }
 
 .works article .works-desc .texts {
@@ -235,7 +259,7 @@ main .main-img {
 
 .hireme {
     text-align: center;
-    margin:4rem 0 6rem 0;
+    margin:8rem 0;
     display: inline-block;
     width: 100%;
 }
@@ -301,7 +325,9 @@ footer .copyright {
     margin-bottom: 20px;
 }
 
-
+footer .foot-inner .footer-logo img {
+	width:120px;
+}
 
 
 
@@ -321,7 +347,7 @@ footer .copyright {
 	header nav.menu a {
 	    font-size: 1.3rem;
 	}
-W
+
 	main .half {
 		height:200px;
 		background-image: none;
@@ -337,7 +363,7 @@ W
 		width: 100%;
 		padding:4%;  
 		text-align: center;
-		border-radius: 16px;
+		border-radius: 40px;
 		transform: translate(-50%, -50%);
 		white-space: nowrap;
 	}	
@@ -361,9 +387,13 @@ W
 		max-width:300px;
 	}
 
+	main .main-img #pc-img {
+		display: none;
+	}
+
 	.works {
 	    width: calc(100% - 8rem);
-	    margin: 4rem auto;
+	    margin:6rem auto;
 	}
 
 	.works article .works-item {
@@ -373,30 +403,7 @@ W
 		text-align: left;
 	}
 
-	.works article.works-item-wrap-1 .works-desc {
-		text-align: left;
-	}
 
-	.works article.works-item-wrap-2 {
-		display: flex;
-		flex-flow: wrap;
-	}
-
-	.works article .works-img .img-1 {
-	 	background-position: center;
-	}
-
-	.works article .works-img .img-2 {
-	    background-position: center;
-	}
-
-	.works article.works-item-wrap-2 .works-img {
-		order:1;
-	}
-
-	.works article.works-item-wrap-2 .works-desc {
-		order:2;
-	}
 
 	.works article .works-desc {
 	    padding: 0;
@@ -407,7 +414,7 @@ W
 		margin-left: 10px;
 	}
 
-	.works article.works-item-wrap-1 .works-desc .num {
+	.works article .works-desc .num {
 		margin-top: -5px;
 	}
 
@@ -416,7 +423,7 @@ W
 	}
 
 	.hireme {
-		margin: 7rem 0 6rem 0;
+		margin:0rem 0 8rem 0;
 	}
 
 	.hireme .words {
@@ -427,6 +434,10 @@ W
 
 	footer .foot-inner {
 	    text-align: center;
+	}
+
+	footer .foot-inner .footer-logo img {
+		width:100px;
 	}
 
 }
