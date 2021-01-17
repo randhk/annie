@@ -37,7 +37,7 @@ a.link:hover {
 header {
 	max-width:1140px;
 	margin:0 auto;
-	padding:20px 0;
+	padding:20px;
 }
 
 header .logo img { 
@@ -66,9 +66,13 @@ main .left {
 }
 
 main .right {
-	background-color:#79C8A4;
+	background-color:#FDF3F1;
 	background-image:url("https://randhk.github.io/annie/img/annie_main_bg_right.svg");
 }
+
+
+
+
 
 main .half {
 	background-repeat:no-repeat;
@@ -77,6 +81,12 @@ main .half {
 	width:calc(100%/2);
 	float:left;
 	position: relative;
+	transition: background-color .5s;
+}
+
+main .half:hover {
+    background-color: #79C8A4;
+
 }
 
 main .half a {
@@ -95,16 +105,20 @@ main .half:before {
 	display: inline-block;
 }	
 
+main .half:hover:before {
+	color:#fff;
+}
+
 main .left:before {
 	content:'WEB PUBLISH';
 	color:#79C8A4;
-	right:0;
+	right:-20px;
 }
 
 main .right:before {
 	content:'DESIGN';
-	color:#fff;
-	left:0;
+	color:#79C8A4;
+	left:-20px;
 	text-align: right;
 }
 
@@ -125,6 +139,12 @@ main .main-img {
 main .main-img #pc-img {
 	max-width:538px;
 	width: 100%;
+}
+
+main .main-img #pc-img .head1 {
+	animation: nod 2s  infinite;
+	-webkit-animation-direction:alternate;
+	transform-origin: 30% 30%;
 }
 
 main .main-img #pc-img .spinner {
@@ -149,15 +169,14 @@ main .main-img #pc-img .spinner-re {
 	}
 }
 
-@keyframes step {
+@keyframes nod {
 	from{
-		opacity:0;
+		transform: rotate(-5deg);
 	}
 	to{
-		opacity:1;
+		transform: rotate(5deg);
 	}
 }
-
 
 
 .works {
@@ -308,7 +327,7 @@ main .main-img #pc-img .spinner-re {
 
 footer {
     background-color: #233741;
-    padding: 3rem 0 2rem 0;
+    padding: 3rem 20px 2rem 20px;
     display: inline-block;
     width: 100%;
 }
