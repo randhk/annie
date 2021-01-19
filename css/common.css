@@ -246,34 +246,52 @@
 .intro-wrap .intro-con {
  	background-repeat: no-repeat;
  	overflow:hidden;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed; 
+    background-size: 1140px;
+    background-position: center bottom;
+    /*background-attachment: fixed; */
 	height: 350px;
 	max-width: 1140px;
+	margin: 0 auto;
 }
 
 .intro-wrap .intro-con-1 {
 	background-image: url("https://randhk.github.io/annie/img/sub1_intro_bg_1.svg");
 }
 
-.intro-wrap .intro-con-2 {
+/*.intro-wrap .intro-con-2 {
 	background-image: url("https://randhk.github.io/annie/img/sub1_intro_bg_2.svg");
-}
+}*/
 
 .exp {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+.exp .exp-item-wrap { 
 	display: flex;
 }
 
-.exp .exp-item { 
+.exp .exp-item-wrap .exp-item {
 	flex-basis: 50%;
-	max-width: 590px;
-	width: 100%;
-	max-height: 400px;
-
 }
+.exp .exp-img img {  max-width: 590px; width: 100%;  }
 
-.exp .slider-1 .slick-list .slick-track img { max-width: 590px; }
+.exp .exp-desc { padding: 5rem 6rem 0 6rem; display: inline-block; max-width: 590px; width: 100%; }
+.exp .exp-desc .title-1 { font-size:14px; color: #79C8A4; }
+.exp .exp-desc .title-2 { font-size: 21px; font-weight: normal; margin:10px 0 20px 0; }
+.exp .exp-desc .text { font-size: 14px; line-height: 1.6; }
+
+.exp .contribute { margin:4rem 0; }
+.exp .contribute .con-text { font-size:16px; font-weight: 500; }
+.exp .contribute .qmark { width: 18px; height: 18px; border-radius: 100%;  display: inline-block; background-color: #c4c4c4; text-align: center; font-size:14px; line-height: 18px; font-weight: 500; color: #fff; margin:0 5px; 
+    vertical-align: bottom;}
+.exp .contribute .progress { background-color: #dedede; display: inline-block; max-width: 300px; width: 100%;height: 10px; border-radius: 10px; position: relative; }
+.exp .contribute .progress .bar {  display: inline-block; max-width: 300px; width: 50%;height: 10px; border-radius: 10px; background-color: #79C8A4; position: absolute;top:0;left:0; }
+.exp .contribute .progress .bar::after { content: '50%'; position: absolute;top:-15px; left:90%;color: #79C8A4; font-size: 12px; font-weight: 500; }
+
+
+.exp .exp-desc .numbering p { margin-bottom: 10px; font-size:14px; }
+.exp .exp-desc .numbering .num { display: inline-block; border-radius: 100%; background-color: #c4c4c4; font-size:11px; width:15px; height: 15px; color: #fff; text-align: center; line-height: 15px; margin-right: 5px; }
 
 /*768px 미디어쿼리*/
 @media screen and (max-width:768px) {

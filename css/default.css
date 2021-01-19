@@ -34,7 +34,7 @@ a.link:hover {
 .font-gray { color:#dedede; }
 
 
-header {
+header .header-inner{
 	max-width:1140px;
 	margin:0 auto;
 	padding:20px;
