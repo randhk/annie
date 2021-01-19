@@ -276,6 +276,13 @@
 }
 .exp .exp-img img {  max-width: 590px; width: 100%;  }
 
+.exp .exp-odd .exp-img {
+	order:2;
+}
+.exp .exp-odd .exp-desc {
+	order:1;
+}
+
 .exp .exp-desc { padding: 5rem 6rem 0 6rem; display: inline-block; max-width: 590px; width: 100%; }
 .exp .exp-desc .title-1 { font-size:14px; color: #79C8A4; }
 .exp .exp-desc .title-2 { font-size: 21px; font-weight: normal; margin:10px 0 20px 0; }
