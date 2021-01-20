@@ -186,7 +186,7 @@
 }
 
 .works article .works-img .img-2 {
-    background-image: url("sub1_main_img.png");
+    background-image: url("https://randhk.github.io/annie/img/annie_sec_ad.png");
     background-position: center;
 }
 
@@ -228,8 +228,13 @@
 .sub-main .main-text{
 	position: absolute;
 	top:50%;
-	left:20%;
+	left:50%;
 	transform: translate(-50%,-50%);
+	display: inline-block;
+	max-width: 1140px;
+	text-align: left;
+	width: 100%;
+	padding: 0 20px;
 }
 
 .sub-main .main-text h1{
@@ -315,9 +320,9 @@
         top: 85%;
         left: 50%;
         bottom: auto;
-        max-width: 130px;
+        max-width: 55%;
         width: 100%;
-        padding: 4%;
+        padding: 2% 4%;
         text-align: center;
         border-radius: 40px;
         transform: translate(-50%, -50%);
@@ -374,5 +379,48 @@
     .works article .works-desc .link-wrap {
         text-align: center;
     }
+
+    /*서브 1*/
+    .sub-main { 
+    	background-image: url("https://randhk.github.io/annie/img/annie_sec_red.png");
+		background-size: auto 115%;
+	    background-position: 200% 25%;
+
+    }
+    .sub-main .main-text{
+    	padding:0 1rem;
+    }
+
+}
+
+/*320px -767px 미디어쿼리*/
+@media screen and (min-width:320px)  and (max-width:600px) {
+	/*메인*/
+    .main .half:before {
+        font-size: 1.4rem;
+        max-width: 130px;
+        padding:3% 4%;
+    }
+
+	/*서브 1*/
+	 .sub-main { background-image:none; position: relative; }	
+	 .sub-main::after { 
+	 	content: '';
+	 	display: inline-block;
+	 	width: 100%;
+	 	height: 100%;
+	 	opacity: 0.5;
+	 	background-image: url("https://randhk.github.io/annie/img/annie_sec_red.png");
+	 	background-repeat: no-repeat;
+		background-size: auto 100%;
+	    background-position: -50% center;
+	    position: absolute;
+	    top:0;
+	    left:0;
+	    z-index: -1;
+
+	 }
+
+
 
 }

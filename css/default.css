@@ -107,6 +107,39 @@ header nav.menu a {
 	margin-right: 0;
 }
 
+.page-nav-wrap {
+	display: flex;
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+.page-nav-wrap .page-nav-area {
+	flex-basis: 50%;
+	background-image: url("https://randhk.github.io/annie/img/sub1_footerNav_bg.svg");
+	background-repeat: no-repeat;
+	height: 20vh;
+	background-size: contain;
+}
+
+.page-nav-wrap .page-nav-left {
+    background-position:  bottom;
+}
+
+.page-nav-wrap .page-nav-left:hover {
+	background-image: url("https://randhk.github.io/annie/img/sub1_footerNav_bg_hover.svg");
+	background-position:  bottom;
+}
+ 
+/*.page-nav-wrap .page-nav-right {
+    background-position: 88% bottom;
+}
+
+.page-nav-wrap .page-nav-right:hover {
+	background-image: url("https://randhk.github.io/annie/img/sub1_footerNav_bg_hover.svg");
+	background-position: -75% bottom;
+}
+*/
+
 footer {
     background-color: #233741;
     padding: 3rem 20px 2rem 20px;
@@ -133,7 +166,7 @@ footer .foot-inner .footer-logo img {
 
 
 @media screen and (max-width:768px) {
-	header {
+	header .header-inner {
 		padding:2rem 1rem;
 	}
 
@@ -166,6 +199,7 @@ footer .foot-inner .footer-logo img {
 	footer .foot-inner .footer-logo img {
 		width:100px;
 	}
+
 
 }
 
