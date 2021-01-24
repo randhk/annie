@@ -305,6 +305,77 @@
 .exp .exp-desc .numbering p { margin-bottom: 10px; font-size:14px; }
 .exp .exp-desc .numbering .num { display: inline-block; border-radius: 100%; background-color: #c4c4c4; font-size:11px; width:15px; height: 15px; color: #fff; text-align: center; line-height: 15px; margin-right: 5px; }
 
+    /*서브 2*/
+    .sub-main-2 { 
+      background-image: url("https://randhk.github.io/annie/img/sub2_main_img.png");
+    }
+    .tabs-wrap ul.tabs-top {
+      display: flex;
+      max-width: 1140px;
+      margin: 0 auto;
+    }
+
+    .tabs-wrap ul.tabs-top li {
+      flex-basis: 50%;
+      text-align: center;
+      padding: 80px 0;
+      position: relative;
+
+    }
+    .tabs-wrap ul.tabs-top li.active::after {
+      content:'';
+      display: inline-block;
+      max-width: 127px;
+      max-height: 81px;
+      width:100%;
+      height:100%;
+      position: absolute;
+
+      background-image: url("https://randhk.github.io/annie/img/sub2_tabTop_active.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      
+    }
+    .tabs-wrap ul.tabs-top li.first.active::after {
+      transform: scaleX(-1);
+      bottom: 10%;
+      right:10%;
+    }
+    .tabs-wrap ul.tabs-top li.second.active::after {
+      transform: scaleX(1);
+      bottom: 10%;
+      left:10%;
+    }
+
+
+        .tabs-wrap ul.tabs-top li a {  
+      display: inline-block;
+      background-color:#DEDEDE;
+      color:#aaa;
+      max-width: 180px;
+      max-height: 180px;
+      width: 13vw;
+      height: 13vw;
+      border-radius: 100%;
+      position: relative;
+      }
+     .tabs-wrap ul.tabs-top li a .circle-text {  
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size:1.3vw;
+      letter-spacing: 2px;
+      font-weight: 500;
+    }
+
+     .tabs-wrap ul.tabs-top li.active a{  
+      background-color:#79C8A4;
+      color:#fff;
+    }
+
+
+
 /*768px 미디어쿼리*/
 @media screen and (max-width:768px) {
 	
@@ -391,6 +462,10 @@
     	padding:0 1rem;
     }
 
+    /*서브 2*/
+    .sub-main-2 { 
+      background-image: url("https://randhk.github.io/annie/img/annie_sec_ad.png");
+    }
 }
 
 /*320px -767px 미디어쿼리*/
@@ -420,7 +495,11 @@
 	    z-index: -1;
 
 	 }
-
-
+     /*서브 2*/
+      .sub-main-2 { background-image:none; }
+      .sub-main-2::after { 
+      background-image: url("https://randhk.github.io/annie/img/annie_sec_ad.png");
+      font-size: 2rem;
+    }
 
 }

@@ -112,6 +112,10 @@ header nav.menu a {
 	max-width: 1140px;
 	margin: 0 auto;
 }
+.page-nav-wrap .page-nav-area a {
+	width:100%; 
+	position: relative;
+}
 
 .page-nav-wrap .page-nav-area {
 	flex-basis: 50%;
@@ -122,27 +126,23 @@ header nav.menu a {
 }
 
 .page-nav-wrap .page-nav-left {
-    background-position:  -210px bottom;
+    background-position:  -170px bottom;
 }
 
 .page-nav-wrap .page-nav-left:hover {
 	background-image: url("https://randhk.github.io/annie/img/sub1_footerNav_bg_hover.svg");
-	background-position:  bottom;
+	background-position:  10px bottom;
 }
  
 .page-nav-wrap .page-nav-right {
-    background-position: 190px bottom;
+    background-position: 220px bottom;
 }
 
 .page-nav-wrap .page-nav-right:hover {
     background-image: url(https://randhk.github.io/annie/img/sub1_footerNav_bg_hover.svg);
     background-position: 400px bottom;
 }
-.page-nav-wrap .page-nav-area a {
-    display: inline-block;
-    width: 100%;
-    position: relative;
-}
+
 
 .page-nav-wrap .page-nav-area .page-nav-text .text-top {
     color: rgb(121, 200, 164);
@@ -171,7 +171,7 @@ header nav.menu a {
     right: 20%;
 }
 
-.page-nav-wrap .page-nav-area .page-nav-text .text-bottom::after {
+.page-nav-wrap .page-nav-area:hover .page-nav-text .text-bottom::after {
     content: "";
     display: inline-block;
     width: 100%;
