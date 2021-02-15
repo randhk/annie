@@ -191,7 +191,7 @@
 }
 
 .works article .works-desc {
-    padding: 2.5rem;
+    padding: 2.5rem 12% 2.5rem 3rem;
     text-align: right;
 }
 
@@ -263,9 +263,9 @@
 	background-image: url("https://randhk.github.io/annie/img/sub1_intro_bg_1.svg");
 }
 
-/*.intro-wrap .intro-con-2 {
+.intro-wrap .intro-con-2 {
 	background-image: url("https://randhk.github.io/annie/img/sub1_intro_bg_2.svg");
-}*/
+}
 
 .exp {
 	max-width: 1140px;
@@ -300,7 +300,8 @@
 .exp .contribute .progress { background-color: #dedede; display: inline-block; max-width: 300px; width: 100%;height: 10px; border-radius: 10px; position: relative; }
 .exp .contribute .progress .bar {  display: inline-block; max-width: 300px; width: 50%;height: 10px; border-radius: 10px; background-color: #79C8A4; position: absolute;top:0;left:0; }
 .exp .contribute .progress .bar::after { content: '50%'; position: absolute;top:-15px; left:90%;color: #79C8A4; font-size: 12px; font-weight: 500; }
-
+.exp .contribute-2 .progress .bar {  width: 70%; }
+.exp .contribute-2 .progress .bar::after {  content: '70%';  }
 
 .exp .exp-desc .numbering p { margin-bottom: 10px; font-size:14px; }
 .exp .exp-desc .numbering .num { display: inline-block; border-radius: 100%; background-color: #c4c4c4; font-size:11px; width:15px; height: 15px; color: #fff; text-align: center; line-height: 15px; margin-right: 5px; }
@@ -313,42 +314,53 @@
       display: flex;
       max-width: 1140px;
       margin: 0 auto;
+      position: relative;
     }
-
+    .tabs-wrap ul.tabs-top::after {
+        content:'';
+        display: inline-block;
+        width: 55px;
+        height:57px;
+        background-image: url("https://randhk.github.io/annie/img/sub2_peach_hover.svg");
+        position: absolute;
+        bottom:35px;
+        left:51%;
+        transform: translate(-50%, -50%);
+        transition: bottom 0.3s ease-out;
+    }
+    .tabs-wrap ul.tabs-top:active::after{
+        bottom:100px;
+    }
     .tabs-wrap ul.tabs-top li {
       flex-basis: 50%;
       text-align: center;
       padding: 80px 0;
       position: relative;
-
-    }
-    .tabs-wrap ul.tabs-top li.active::after {
-      content:'';
-      display: inline-block;
-      max-width: 127px;
-      max-height: 81px;
-      width:100%;
-      height:100%;
-      position: absolute;
-
-      background-image: url("https://randhk.github.io/annie/img/sub2_tabTop_active.svg");
       background-repeat: no-repeat;
-      background-position: center;
       
     }
-    .tabs-wrap ul.tabs-top li.first.active::after {
-      transform: scaleX(-1);
-      bottom: 10%;
-      right:10%;
+
+    .tabs-wrap ul.tabs-top li.first { 
+        background-image:url("https://randhk.github.io/annie/img/sub2_face_left.svg");
+        background-position: right bottom;
+
     }
-    .tabs-wrap ul.tabs-top li.second.active::after {
-      transform: scaleX(1);
-      bottom: 10%;
-      left:10%;
+
+    .tabs-wrap ul.tabs-top li.first.active { 
+        background-image:url("https://randhk.github.io/annie/img/sub2_face_left_active.svg");
     }
 
 
-        .tabs-wrap ul.tabs-top li a {  
+    .tabs-wrap ul.tabs-top li.second { 
+        background-image:url("https://randhk.github.io/annie/img/sub2_face_right.svg");
+        background-position: left bottom
+    }
+
+    .tabs-wrap ul.tabs-top li.second.active { 
+        background-image:url("https://randhk.github.io/annie/img/sub2_face_right_active.svg");
+    }
+
+     .tabs-wrap ul.tabs-top li a {  
       display: inline-block;
       background-color:#DEDEDE;
       color:#aaa;
@@ -358,7 +370,36 @@
       height: 13vw;
       border-radius: 100%;
       position: relative;
+      min-width: 100px;
+      min-height: 100px;
+      position: relative;
       }
+     .tabs-wrap ul.tabs-top li a::after {  
+      content: '';
+      position:absolute;
+      width: 0px;height: 0px;
+      border-top:2.8vw solid #DEDEDE;
+      border-bottom:none;
+      border-right: 2.5vw solid transparent;
+      border-left: 2.5vw solid  transparent;
+      }
+
+     .tabs-wrap ul.tabs-top li.first a::after {  
+      bottom: -3%;
+      right: 9%;
+      transform: rotate(-30deg);
+      }
+
+     .tabs-wrap ul.tabs-top li.second a::after {  
+      bottom: -3%;
+      left: 9%;
+      transform: rotate(30deg);
+      }
+
+     .tabs-wrap ul.tabs-top li.active a::after {  
+        border-top:2.8vw solid #79C8A4;
+      }
+
      .tabs-wrap ul.tabs-top li a .circle-text {  
       position: absolute;
       top: 50%;
@@ -373,8 +414,31 @@
       background-color:#79C8A4;
       color:#fff;
     }
+    .tabs-wrap .tabs-con { display: none; }
+    .tabs-wrap .tabs-con.show { display: block; }
+    .tabs-wrap #content-2 .con-top { margin:40px 0; }
+    .tabs-wrap #content-2 .con-top h3 { font-weight:500; font-size:2rem; text-align: center; }
+    .tabs-wrap #content-2 .con-bottom { display: flex; flex-flow: row wrap; padding:0 20px; justify-content: space-between; max-width: 1140px; max-width: 0 auto; }
+    .tabs-wrap #content-2 .con-bottom .design-item { flex-basis: 48.5%; position: relative; margin-bottom: 20px; overflow: hidden;  }
+    
+    .tabs-wrap #content-2 .con-bottom .design-item img { width: 100%; }
+    .tabs-wrap #content-2 .con-bottom .design-item .design-desc { background-color: rgb(250 250 250 / 80%); 
+        position: absolute; bottom: -35px; left:0; padding: 20px; display: inline-block; width: 100%;text-align: left;transition:all .5s;
+    }
+    .tabs-wrap #content-2 .con-bottom .design-item:hover .design-desc { bottom: 0; }
+    .tabs-wrap #content-2 .con-bottom .design-item .design-desc .desc-1 { font-size:1.6rem; font-weight: 500; }
+    .tabs-wrap #content-2 .con-bottom .design-item .design-desc .desc-2 { font-size:1.3rem; padding: 20px 0 0 0;  }
+@media screen and (min-width:769px) and (max-width:1024px){
+.exp .exp-desc { padding: 3%; }
+.exp .exp-desc .title-1 { font-size:1.3vw; } 
+.exp .exp-desc .title-2 { font-size: 2vw; margin: 3% 0 4% 0; }
+.exp .exp-desc .text { font-size: 1.5vw; }  
+.exp .contribute { margin:6% 0; }
+.exp .contribute .con-text { font-size:1.6vw; }
+.exp .contribute .progress { max-width:250px; }
+.exp .exp-desc .numbering p { font-size: 1.5vw;margin-bottom: 2%; }
 
-
+}
 
 /*768px 미디어쿼리*/
 @media screen and (max-width:768px) {
@@ -466,6 +530,15 @@
     .sub-main-2 { 
       background-image: url("https://randhk.github.io/annie/img/annie_sec_ad.png");
     }
+
+    .exp .exp-item-wrap { flex-flow: wrap; }
+    .exp .exp-item-wrap .exp-item { flex-basis: 100%; max-width: 100%; }
+    .exp .exp-img img { max-width: 100%; }
+    .exp .exp-desc { padding:4rem 3rem; }
+    .exp .exp-odd .exp-img {order:1;}
+    .exp .exp-odd .exp-desc { order:2; }
+    .tabs-wrap #content-2 .con-bottom .design-item { flex-basis: 100%; }
+
 }
 
 /*320px -767px 미디어쿼리*/
@@ -500,6 +573,22 @@
       .sub-main-2::after { 
       background-image: url("https://randhk.github.io/annie/img/annie_sec_ad.png");
       font-size: 2rem;
-    }
+      }
+      .tabs-wrap ul.tabs-top li a::after {  
+      border-top:3.8vw solid #DEDEDE;
+      border-right: 3.5vw solid transparent;
+      border-left: 3.5vw solid  transparent;
+      }
+     .tabs-wrap ul.tabs-top li.first a::after {  
+      bottom: 0%;
+      }
+
+     .tabs-wrap ul.tabs-top li.second a::after {  
+      bottom: 0;
+      }
+
+     .tabs-wrap ul.tabs-top li.active a::after {  
+        border-top:3.8vw solid #79C8A4;
+      }
 
 }

@@ -32,7 +32,7 @@ a.link:hover {
 .font-green { color:#79C8A4; }
 .font-black { color:#233741; }
 .font-gray { color:#dedede; }
-
+.ta-c { text-align: center; }
 
 header .header-inner{
 	max-width:1140px;
@@ -41,17 +41,27 @@ header .header-inner{
 }
 
 header .logo img { 
-	width: 190px;
+	width: 150px;
 }
 
 header nav.menu {
 	float:right;
-	padding:20px 0 0 0;
+	padding:15px 0 0 0;
 }
 
 header nav.menu a {
 	font-size:14px;
-	margin-left:15px;
+	margin-left:20px;
+	position: relative;
+}
+header nav.menu a:hover::after {
+	content:'';
+	position: absolute;
+	border-top:2px solid #F3C4BB;
+	top:-7px;
+	left:0;
+	width: 100%;
+	display: inline-block;
 }
 
 .head-sub { 
@@ -122,26 +132,27 @@ header nav.menu a {
 	background-image: url("https://randhk.github.io/annie/img/sub1_footerNav_bg.svg");
 	background-repeat: no-repeat;
 	height: 20vh;
-	background-size: contain;
+	background-size: 27%;
+	transition: all .3s;
 }
 
 .page-nav-wrap .page-nav-left {
-    background-position:  -170px bottom;
+    background-position: left 30px;
 }
 
 .page-nav-wrap .page-nav-left:hover {
 	background-image: url("https://randhk.github.io/annie/img/sub1_footerNav_bg_hover.svg");
-	background-position:  10px bottom;
-}
- 
+	background-position:  left 30px;
+ }
 .page-nav-wrap .page-nav-right {
-    background-position: 220px bottom;
+    background-position: right 30px;
 }
 
 .page-nav-wrap .page-nav-right:hover {
     background-image: url(https://randhk.github.io/annie/img/sub1_footerNav_bg_hover.svg);
-    background-position: 400px bottom;
+    background-position: right 30px;
 }
+
 
 
 .page-nav-wrap .page-nav-area .page-nav-text .text-top {
@@ -171,7 +182,7 @@ header nav.menu a {
     right: 20%;
 }
 
-.page-nav-wrap .page-nav-area:hover .page-nav-text .text-bottom::after {
+.page-nav-wrap .page-nav-area:hover .page-nav-text .text-bottom::before {
     content: "";
     display: inline-block;
     width: 100%;
@@ -206,8 +217,6 @@ footer .copyright {
 footer .foot-inner .footer-logo img {
 	width:120px;
 }
-
-
 
 @media screen and (max-width:768px) {
 	header .header-inner {
@@ -244,5 +253,18 @@ footer .foot-inner .footer-logo img {
 		width:100px;
 	}
 
+	/*하단네비*/
+	.page-nav-wrap { flex-flow: wrap; }
+	.page-nav-wrap .page-nav-area { flex-basis: 100%;  background-image: none; }
+	.page-nav-wrap .page-nav-area:hover {background-image: none;  }
+	.page-nav-wrap .page-nav-left .page-nav-text .text-top {text-align: left;}
+	.page-nav-wrap .page-nav-left .page-nav-text .text-bottom { left:20%; width: initial; display: inline-table;}
+	.page-nav-wrap .page-nav-area .page-nav-text .text-bottom:after,
+	.page-nav-wrap .page-nav-right .page-nav-text .text-bottom:after {
+	display: none; content: ''; width:30px; height:31px; background-image: url(https://randhk.github.io/annie/img/sub1_footerNav_bg_hover.svg);
+	background-size: 25px; background-position: 92% 17%; background-repeat: no-repeat; position: absolute; top:-8px; right:-40px; 
+	}
+	.page-nav-wrap .page-nav-right:hover .page-nav-text .text-bottom::after,
+	.page-nav-wrap .page-nav-left:hover .page-nav-text .text-bottom::after { display: inline-block; }
 
 }

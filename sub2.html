@@ -4,9 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="https://randhk.github.io/annie/img/favicon.ico">
-  <link rel="stylesheet" href="css/common.css">
+
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="css/common.css">
   <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> -->
 
   <script src="https://code.jquery.com/jquery-latest.min.js"></script>
@@ -30,18 +31,18 @@
 
     <div class="tabs-wrap">
         <ul class="tabs-top">
-            <li class="first active">
+            <li class="first ">
                 <a href="#content-1">
                     <span class="circle-text">PUBLISHING</span>
                 </a>
             </li>
-            <li class="second">
+            <li class="second active">
                 <a href="#content-2">
                     <span class="circle-text">DESIGNING</span>
                 </a>
             </li>
         </ul>
-        <div id="content-1" class="tabs-con show">
+        <div id="content-1" class="tabs-con">
           <section class="exp">
             <article class="exp-item-wrap exp-even">
               <div class="exp-item exp-img">
@@ -100,7 +101,46 @@
             </article>         
           </section>
         </div>
-        <div id="content-2">
+        <div id="content-2" class="tabs-con show">
+          <div class="con-top exp ta-c">
+              <h3>일본 디자인 대행 서비스 관련 디자인</h3>
+              <div class="contribute contribute-2">
+                <span class="con-text">기여도</span> <span class="qmark">?</span>
+                <span class="progress"><span class="bar"></span></span>
+              </div>
+              <div class="con-bottom">
+                <div class="design-item design-item-1">
+                  <img src="https://randhk.github.io/annie/img/sub2_design_01.png" alt="흑마늘 라벨 스티커">
+                  <div class="design-desc">
+                    <p class="desc-1">흑마늘 라벨 스티커</p>
+                    <p class="desc-2">
+                       일러스트 사용
+                       금색과 녹색배경을 조화롭게 배치를  요망
+                    </p>
+                  </div>
+                </div>
+                <div class="design-item design-item-2">
+                  <img src="https://randhk.github.io/annie/img/sub2_design_02.png" alt="흑마늘 라벨 스티커">
+                  <div class="design-desc">
+                    <p class="desc-1">흑마늘 라벨 스티커</p>
+                    <p class="desc-2">
+                       일러스트 사용
+                       자사 식품 상세페이지처럼 제작 요망
+                    </p>
+                  </div>
+                </div>
+                <div class="design-item design-item-3">
+                  <img src="https://randhk.github.io/annie/img/sub2_design_03.png" alt="흑마늘 라벨 스티커">
+                  <div class="design-desc">
+                    <p class="desc-1">흑마늘 라벨 스티커</p>
+                    <p class="desc-2">
+                       일러스트 사용
+                       금색과 녹색배경을 조화롭게 배치를  요망
+                    </p>
+                  </div>
+                </div>
+              </div>
+          </div>
         </div>
     </div>
 
@@ -135,13 +175,12 @@
 
     <script>
         /* 사이즈 탭 */
-        'use strict'
         $(document).ready(function () {
           $('.tabs-wrap > ul.tabs-top > li > a').on('click', function (event) {
             event.preventDefault();
-            $(this).closest('.tabs-wrap').find('.tabs-con').hide();
+            $(this).closest('.tabs-wrap').find('.tabs-con').fadeOut();
             var href = $(this).attr('href');
-            $(href).show();
+            $(href).fadeIn();
             $('.tabs-wrap > ul.tabs-top > li').removeClass('active');
             $(this).closest('.tabs-wrap').find('.tabs-con').removeClass('show');
             $(this).closest('li').addClass('active');
