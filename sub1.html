@@ -1,20 +1,37 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="https://randhk.github.io/annie/img/favicon.ico">
-    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/default.css">
-    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> -->
-    
+    <link rel="stylesheet" href="css/common.css">
+
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="https://randhk.github.io/annie/js/default.js"></script>
-    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/default.js"></script>
+
     <title> Work Experience I  |  Annie's Portfolio</title>
 
 </head>
+<script type="text/javascript">
+jQuery(document).ready(function () {
+    var elementPosition = $('.intro-con-1').offset();
+
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > elementPosition.top) {
+            $('.intro-con-1').css('position', 'fixed');
+            $('.intro-con-2').css('position', 'static');
+        } else {
+            $('.intro-con-1').css('position', 'static');
+            $('.intro-con-2').css('position', 'fixed');
+            ;
+        }
+    });
+});
+</script>
 <body>
     <header class="head-sub">
 	</header>
@@ -29,9 +46,23 @@
         <div class="intro-con intro-con-2"></div>
     </section>
     <section class="exp">
-        <article class="exp-item-wrap exp-even">
+        <article class="exp-item-wrap exp-item-con1-01 exp-even">
             <div class="exp-item exp-img">
-                <img src="https://randhk.github.io/annie/img/sub1_con1_1.png">
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="https://randhk.github.io/annie/img/sub1_con1_1.png" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="https://randhk.github.io/annie/img/sub1_con1_2.png" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="https://randhk.github.io/annie/img/sub1_con1_3.png" alt="">
+                  </div>
+                  </div>
+                  <!-- Add Pagination -->
+                  <div class="swiper-pagination"></div>
+                </div>
             </div>
             <div class="exp-item exp-desc">
                 <p class="title-1">메인 사이트</p>
@@ -42,13 +73,14 @@
                 </p>
 
                 <div class="contribute">
-                    <span class="con-text">기여도</span> <span class="qmark">?</span>
+                    <span class="con-text">기여도</span> 
+                    <span class="qmark">?<span class="qmark-info"></span></span>
                     <span class="progress"><span class="bar"></span></span>
                 </div>
 
                 <div class="numbering">
                     <p>
-                      <span class="num">1</span>100여종 상품페이지 관리
+                      <span class="num">1</span>300여종 상품페이지 관리
                     </p>
                     <p>
                       <span class="num">2</span>페이지 리뉴얼 
@@ -60,9 +92,29 @@
             </div>
         </article>
 
-        <article class="exp-item-wrap exp-odd">
+        <article class="exp-item-wrap exp-item-con1-02 exp-odd">
             <div class="exp-item exp-img">
-                <img src="https://randhk.github.io/annie/img/sub1_con1_1.png">
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="https://randhk.github.io/annie/img/sub1_con2_1.png" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="https://randhk.github.io/annie/img/sub1_con2_2.png" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="https://randhk.github.io/annie/img/sub1_con2_4.png" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="https://randhk.github.io/annie/img/sub2_publish_01_1.png" alt="">
+                      </div> 
+                      <div class="swiper-slide">
+                        <img src="https://randhk.github.io/annie/img/sub1_con2_3.png" alt="">
+                      </div>                                          
+                  </div>
+                  <!-- Add Pagination -->
+                  <div class="swiper-pagination"></div>
+                </div>
             </div>
             <div class="exp-item exp-desc">
                 <p class="title-1">다국어 사이트</p>
@@ -70,35 +122,54 @@
                 <p class="text">
                 </p>
                 <div class="contribute">
-                    <span class="con-text">기여도</span> <span class="qmark">?</span>
+                    <span class="con-text">기여도</span> 
+                    <span class="qmark">?<span class="qmark-info"></span></span>
                     <span class="progress"><span class="bar"></span></span>
                 </div>
                 <div class="numbering">
                     <p>
-                        <span class="num">1</span>호주 주문형 인쇄 : Qmodo.au
+                        <span class="num">1</span>호주 온라인 인쇄 : <a href="https://www.qmodo.com.au/" target="_blank">Qmodo.au</a>
                     </p>
                     <p>
-                        <span class="num">2</span>일본 대형 실사 인쇄 : makumaku.co.jp
+                        <span class="num">2</span>일본 대형 실사 인쇄 : <a href="https://www.makumaku.jp/" target="_blank">makumaku.co.jp</a>
                     </p>
                     <p>
-                        <span class="num">3</span>자사 소개 사이트 전담 : hiswill.co.kr
+                        <span class="num">3</span>일본 온라인 인쇄 : <a href="https://www.oneprint.jp/" target="_blank">oneprint.jp</a>
+                    </p>
+                    <p>
+                        <span class="num">4</span>일본 온라인 인쇄(명함/스티커) : <a href="https://adprint.co.jp/" target="_blank">adprint.co.jp</a>
+                    </p>                    
+                    <p>
+                        <span class="num">5</span>자사 소개 사이트 전담 : <a href="https://hiswill.co.kr/" target="_blank">hiswill.co.kr</a>
                     </p>
                 </div>
             </div>
         </article>
         
-        <article class="exp-item-wrap exp-even">
+        <article class="exp-item-wrap exp-item-con1-03 exp-even">
             <div class="exp-item exp-img">
-                <img src="https://randhk.github.io/annie/img/sub1_con1_1.png">
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="https://randhk.github.io/annie/img/sub1_con3_1.png" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="https://randhk.github.io/annie/img/sub1_con3_2.png" alt="">
+                      </div>                     
+                  </div>
+                  <!-- Add Pagination -->
+                  <div class="swiper-pagination"></div>
+                </div>
             </div>
             <div class="exp-item exp-desc">
                 <p class="title-1">나이키 태블릿 컨텐츠</p>
-                <h3 class="title-2">training.hiswill.co.kr</h3>
+                <h3 class="title-2"><a href="https://training.hiswill.co.kr/" target="_blank">training.hiswill.co.kr</a></h3>
                 <p class="text">
                 </p>
 
                 <div class="contribute">
-                    <span class="con-text">기여도</span> <span class="qmark">?</span>
+                    <span class="con-text">기여도</span> 
+                    <span class="qmark">?<span class="qmark-info"></span></span>
                     <span class="progress"><span class="bar"></span></span>
                 </div>
 
@@ -113,9 +184,20 @@
             </div>
         </article>
 
-        <article class="exp-item-wrap exp-odd">
+        <article class="exp-item-wrap exp-item-con1-04 exp-odd">
             <div class="exp-item exp-img">
-                <img src="https://randhk.github.io/annie/img/sub1_con1_1.png">
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="https://randhk.github.io/annie/img/sub1_con4_1.png" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="https://randhk.github.io/annie/img/sub1_con4_2.png" alt="">
+                      </div>                     
+                  </div>
+                  <!-- Add Pagination -->
+                  <div class="swiper-pagination"></div>
+                </div>
             </div>
             <div class="exp-item exp-desc">
                 <p class="title-1">서비스 준비중</p>
@@ -123,7 +205,7 @@
                 <p class="text">
                 </p>
                 <div class="contribute">
-                    <span class="con-text">기여도</span> <span class="qmark">?</span>
+                    <span class="con-text">기여도</span> <span class="qmark">?<span class="qmark-info"></span></span>
                     <span class="progress"><span class="bar"></span></span>
                 </div>
                 <div class="numbering">

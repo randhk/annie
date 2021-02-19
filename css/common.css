@@ -165,6 +165,9 @@
     transition: all 0.5s;
     /*animation: spin 6s linear infinite;*/
     z-index: -1;
+    transition: all 0.3s;
+
+
 }
 
 .works article.works-item-wrap-1:hover .works-img .circle,
@@ -252,8 +255,8 @@
  	background-repeat: no-repeat;
  	overflow:hidden;
     background-size: 1140px;
-    background-position: center bottom;
-    /*background-attachment: fixed; */
+    
+
 	height: 350px;
 	max-width: 1140px;
 	margin: 0 auto;
@@ -261,10 +264,14 @@
 
 .intro-wrap .intro-con-1 {
 	background-image: url("https://randhk.github.io/annie/img/sub1_intro_bg_1.svg");
+    background-position: center bottom;
+    background-attachment: fixed; 
 }
 
 .intro-wrap .intro-con-2 {
 	background-image: url("https://randhk.github.io/annie/img/sub1_intro_bg_2.svg");
+    background-position: center top;
+    background-attachment: fixed; 
 }
 
 .exp {
@@ -302,19 +309,58 @@
 .exp .exp-desc { padding: 5rem 6rem 0 6rem; display: inline-block; max-width: 590px; width: 100%; }
 .exp .exp-desc .title-1 { font-size:14px; color: #79C8A4; }
 .exp .exp-desc .title-2 { font-size: 21px; font-weight: normal; margin:10px 0 20px 0; }
+.exp .exp-desc .title-2 a:hover {  color: #79C8A4; }
 .exp .exp-desc .text { font-size: 14px; line-height: 1.6; }
 
 .exp .contribute { margin:4rem 0; }
 .exp .contribute .con-text { font-size:16px; font-weight: 500; }
-.exp .contribute .qmark { width: 18px; height: 18px; border-radius: 100%;  display: inline-block; background-color: #c4c4c4; text-align: center; font-size:14px; line-height: 18px; font-weight: 500; color: #fff; margin:0 5px; 
-    vertical-align: bottom;}
+.exp .contribute .qmark { position: relative; width: 18px; height: 18px; border-radius: 100%;  display: inline-block; background-color: #c4c4c4; text-align: center; font-size:14px; line-height: 18px; font-weight: 500; color: #fff; margin:0 5px; vertical-align: bottom;}
+
+.exp .contribute .qmark .qmark-info {  display: inline-block; transform: scale(0); transition: transform .3s; width: 200px; 
+padding:10px 15px; text-align: left; font-size:12px; color:#233741; background-color: #fff;border:1px solid #dedede; 
+border-radius: 10px; position:absolute; top:-65px; left:-13px; height: 58px; transform-origin: 20% 100%; }
+
+.exp .contribute .qmark .qmark-info::before { content: ''; display: inline-block; transform: scale(0) rotate(45deg); 
+transition: transform .3s;  border-style: solid; border-color: #dedede; border-width: 0 1px 1px 0;  transform-origin: 66%; 
+background-color: #fff; position: absolute; left:16px; bottom:-5px; height: 7px; width: 7px; z-index: 10;}    
+
+.exp .contribute .qmark:hover .qmark-info { transform: scale(1); }
+.exp .contribute .qmark:hover .qmark-info:before { transform: scale(1) rotate(45deg); }
+
+
+.exp .exp-item-con1-01 .contribute .qmark .qmark-info:after { content: '현재 퍼블리싱 전체 전담'; }
+.exp .exp-item-con1-02 .contribute .qmark .qmark-info:after { content: 'OnePrint 요청업무 외 전체 퍼블리싱 전담'; }
+.exp .exp-item-con1-03 .contribute .qmark .qmark-info:after { content: '퍼블리싱 전체 전담'; }
+.exp .exp-item-con1-04 .contribute .qmark .qmark-info:after { content: '퍼블리싱 전체 전담'; }
+
+.exp .exp-item-con2-01 .contribute .qmark .qmark-info:after { content: 'Adprint스티커 관련 퍼블리싱 전체 전담'; }
+.exp .exp-item-con2-02 .contribute .qmark .qmark-info:after { content: '퍼블리싱 전체 전담'; }
+.exp .contribute-2 .qmark .qmark-info:after { content: '총 담당자 2명, 디자인 요청 서브 담당자'; }
+
 .exp .contribute .progress { background-color: #dedede; display: inline-block; max-width: 300px; width: 100%;height: 10px; border-radius: 10px; position: relative; }
 .exp .contribute .progress .bar {  display: inline-block; max-width: 300px; width: 50%;height: 10px; border-radius: 10px; background-color: #79C8A4; position: absolute;top:0;left:0; }
-.exp .contribute .progress .bar::after { content: '50%'; position: absolute;top:-15px; left:90%;color: #79C8A4; font-size: 12px; font-weight: 500; }
+.exp .contribute .progress .bar::after { content: ''; position: absolute;top:-15px; left:90%;color: #79C8A4; font-size: 12px; font-weight: 500; }
+
+.exp .exp-item-con1-01 .contribute .progress .bar {width: 90%;  }
+.exp .exp-item-con1-01 .contribute .progress .bar::after { content: '90%'; }
+.exp .exp-item-con1-02 .contribute .progress .bar {width: 80%;  }
+.exp .exp-item-con1-02 .contribute .progress .bar::after { content: '80%'; }
+.exp .exp-item-con1-03 .contribute .progress .bar {width: 100%;  }
+.exp .exp-item-con1-03 .contribute .progress .bar::after { content: '100%'; }
+.exp .exp-item-con1-04 .contribute .progress .bar {width: 100%;  }
+.exp .exp-item-con1-04 .contribute .progress .bar::after { content: '100%'; }
+
+.exp .exp-item-con2-01 .contribute .progress .bar {width: 100%;  }
+.exp .exp-item-con2-01 .contribute .progress .bar::after { content: '100%'; }
+.exp .exp-item-con2-02 .contribute .progress .bar {width: 100%;  }
+.exp .exp-item-con2-02 .contribute .progress .bar::after { content: '100%'; }
+
+
 .exp .contribute-2 .progress .bar {  width: 70%; }
 .exp .contribute-2 .progress .bar::after {  content: '70%';  }
 
 .exp .exp-desc .numbering p { margin-bottom: 10px; font-size:14px; }
+.exp .exp-desc .numbering p a:hover { color:#79C8A4; }
 .exp .exp-desc .numbering .num { display: inline-block; border-radius: 100%; background-color: #c4c4c4; font-size:11px; width:15px; height: 15px; color: #fff; text-align: center; line-height: 15px; margin-right: 5px; }
 
     /*서브 2*/
@@ -478,6 +524,7 @@
         top: 85%;
         left: 50%;
         bottom: auto;
+        padding:0;
         max-width: 55%;
         width: 100%;
         padding: 2% 4%;
@@ -488,8 +535,8 @@
     }
 
     .main .half:before {
-        color: #FDF3F1;
-        background-color: #79C8A4;
+        color: #79C8A4 ;
+        background-color: #FDF3F1 ;
     }
 
     .main .half:hover:before {
