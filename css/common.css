@@ -378,7 +378,7 @@ background-color: #fff; position: absolute; left:16px; bottom:-5px; height: 7px;
 
 
 .exp .exp-item-con1-01 .contribute .qmark .qmark-info:after { content: '현재 퍼블리싱 전체 전담'; }
-.exp .exp-item-con1-02 .contribute .qmark .qmark-info:after { content: 'OnePrint 요청업무 외 전체 퍼블리싱 전담'; }
+.exp .exp-item-con1-02 .contribute .qmark .qmark-info:after { content: 'OnePrint, MakuMaku 요청업무 외 전체 퍼블리싱 전담'; }
 .exp .exp-item-con1-03 .contribute .qmark .qmark-info:after { content: '퍼블리싱 전체 전담'; }
 .exp .exp-item-con1-04 .contribute .qmark .qmark-info:after { content: '퍼블리싱 전체 전담'; }
 
@@ -650,7 +650,7 @@ background-color: #fff; position: absolute; left:16px; bottom:-5px; height: 7px;
       background-image: url("https://randhk.github.io/annie/img/annie_sec_ad.png");
     }
     .exp .contribute-2 { margin: 4rem 20px; }
-    .exp .contribute .progress { margin: 30px 0 0 0; }    
+    .exp .contribute .progress { margin: 30px 0 0 0; }   
     .exp .exp-item-wrap { flex-flow: wrap; }
     .exp .exp-item-wrap .exp-item { flex-basis: 100%; max-width: 100%; }
     .exp .exp-img img { max-width: 100%; }
