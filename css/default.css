@@ -111,13 +111,12 @@ header nav.menu a:hover::after {
 	height: 40px;
 	background-image: url("https://randhk.github.io/annie/img/annie_aside_img.svg");
 }
+.hireme .contact li.phone {
+	background-position:0 -185px;
+}
 
 .hireme .contact li.mail {
 	background-position:0 -145px;
-}
-
-.hireme .contact li.insta {
-	background-position:0 -185px;
 }
 
 .hireme .contact li:last-child {
