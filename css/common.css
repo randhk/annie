@@ -89,7 +89,7 @@
     transform-origin: 30% 30%;
 }
 
-.main .main-img #pc-img .head2  {
+.main .main-img #pc-img .head2 {
     transform-origin: 80% 80%;
 }
 
@@ -103,50 +103,65 @@
     -webkit-animation-direction: reverse;
     transform-origin: 13.5% 62.5%;
 }
-.txt {     fill: #233741; transition: none; }
- #text1 {
-     animation: show 3s;
+
+.txt {
+    fill: #233741;
+    transition: none;
 }
 
- @keyframes show {
-     to {
+#text1 {
+    animation: show 3s;
+}
+
+@keyframes show {
+    to {
         fill: #fff;
     }
-     from {
-         fill: #fff;
-    }
-}
- #text2 {
-     animation: show 5s;
-}
- @keyframes show {
-     to {
+
+    from {
         fill: #fff;
     }
-     from {
-         fill: #fff;
+}
+
+#text2 {
+    animation: show 5s;
+}
+
+@keyframes show {
+    to {
+        fill: #fff;
+    }
+
+    from {
+        fill: #fff;
     }
 }
+
 #text3 {
-     animation: show 7s;
+    animation: show 7s;
 }
- @keyframes show {
-     to {
+
+@keyframes show {
+    to {
         fill: #fff;
     }
-     from {
-         fill: #fff;
+
+    from {
+        fill: #fff;
     }
 }
+
 #text4 {
-     animation: show 9s;
+    animation: show 9s;
 }
- @keyframes show {
-     to {
-        fill:#233741;
+
+@keyframes show {
+    to {
+        fill: #233741;
     }
-     from {
-         fill: #fff;
+
+    from {
+        fill: #fff;
     }
 }
 
@@ -268,312 +283,624 @@
 }
 
 /*서브 1*/
-.sub-main { 
-	height:400px;
-	background-image:url("https://randhk.github.io/annie/img/sub1_main_img.png");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: 200px 0;
-	position: relative;
- }
-
-.sub-main .main-text{
-	position: absolute;
-	top:50%;
-	left:50%;
-	transform: translate(-50%,-50%);
-	display: inline-block;
-	max-width: 1140px;
-	text-align: left;
-	width: 100%;
-	padding: 0 20px;
+.sub-main {
+    height: 400px;
+    background-image: url("https://randhk.github.io/annie/img/sub1_main_img.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 200px 0;
+    position: relative;
 }
 
-.sub-main .main-text h1{
-	font-size: 28px;
-	font-weight: 500;
-	margin-top:15px;
+.sub-main .main-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    max-width: 1140px;
+    text-align: left;
+    width: 100%;
+    padding: 0 20px;
 }
 
-.sub-main .main-text h2{
-	font-size: 18px;
-	color: #79C8A4;
+.sub-main .main-text h1 {
+    font-size: 28px;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+.sub-main .main-text h2 {
+    font-size: 18px;
+    color: #79C8A4;
 }
 
 .intro-wrap .intro-con {
- 	background-repeat: no-repeat;
- 	overflow:hidden;
+    background-repeat: no-repeat;
+    overflow: hidden;
     background-size: 1140px;
-    
 
-	height: 350px;
-	max-width: 1140px;
-	margin: 0 auto;
+
+    height: 350px;
+    max-width: 1140px;
+    margin: 0 auto;
 }
 
 .intro-wrap .intro-con-1 {
-	background-image: url("https://randhk.github.io/annie/img/sub1_intro_bg_1.svg");
+    background-image: url("https://randhk.github.io/annie/img/sub1_intro_bg_1.svg");
     background-position: center bottom;
-    background-attachment: fixed; 
+    background-attachment: fixed;
 }
 
 .intro-wrap .intro-con-2 {
-	background-image: url("https://randhk.github.io/annie/img/sub1_intro_bg_2.svg");
+    background-image: url("https://randhk.github.io/annie/img/sub1_intro_bg_2.svg");
     background-position: center top;
-    background-attachment: fixed; 
+    background-attachment: fixed;
 }
 
 .exp {
-	max-width: 1140px;
-	margin: 0 auto;
+    max-width: 1140px;
+    margin: 0 auto;
 }
 
-.exp .exp-item-wrap { 
-	display: flex;
+.exp .exp-item-wrap {
+    display: flex;
 }
 
 
 .exp .exp-item-wrap .exp-item {
-	flex-basis: 50%;
+    flex-basis: 50%;
     width: 50%;
 }
+
 .exp .exp-item-wrap .exp-img .swiper-container .swiper-pagination {
-    bottom:20px;
+    bottom: 20px;
 }
-.exp .exp-item-wrap .exp-img .swiper-container .swiper-pagination-bullet { background-color:  #dedede; opacity: 1; }
+
+.exp .exp-item-wrap .exp-img .swiper-container .swiper-pagination-bullet {
+    background-color: #dedede;
+    opacity: 1;
+}
+
 .exp .exp-item-wrap .exp-img .swiper-container .swiper-pagination-bullet-active {
-    background-color:#c2c2c2;
+    background-color: #c2c2c2;
 }
-.exp .exp-img img {  max-width: 590px; width: 100%;  }
+
+.exp .exp-img img {
+    max-width: 590px;
+    width: 100%;
+}
 
 .exp .exp-odd .exp-img {
-	order:2;
+    order: 2;
 }
 
 
 .exp .exp-odd .exp-desc {
-	order:1;
+    order: 1;
 }
 
-.exp .exp-desc { padding: 5rem 6rem 0 6rem; display: inline-block; max-width: 590px; width: 100%; }
-.exp .exp-desc .title-1 { font-size:14px; color: #79C8A4; }
-.exp .exp-desc .title-2 { font-size: 21px; font-weight: normal; margin:10px 0 20px 0; }
-.exp .exp-desc .title-2 a:hover {  color: #79C8A4; }
-.exp .exp-desc .text { font-size: 14px; line-height: 1.6; }
+.exp .exp-desc {
+    padding: 5rem 6rem 0 6rem;
+    display: inline-block;
+    max-width: 590px;
+    width: 100%;
+}
 
-.exp .contribute { margin:4rem 0; }
-.exp .contribute .con-text { font-size:16px; font-weight: 500; }
-.exp .contribute .qmark { position: relative; width: 18px; height: 18px; border-radius: 100%;  display: inline-block; background-color: #c4c4c4; text-align: center; font-size:14px; line-height: 18px; font-weight: 500; color: #fff; margin:0 5px; vertical-align: bottom;}
-.exp .contribute .qmark:hover { background-color:#F3C4BB;  }
-.exp .contribute .qmark .qmark-info {  display: inline-block; transform: scale(0); transition: transform .3s; width: 200px; 
-padding:10px 15px; text-align: left; font-size:12px; color:#233741; background-color: #fff;border:1px solid #dedede; 
-border-radius: 10px; position:absolute; top:-65px; left:-13px; height: 58px; transform-origin: 20% 100%; }
+.exp .exp-desc .title-1 {
+    font-size: 14px;
+    color: #79C8A4;
+}
 
-.exp .contribute .qmark .qmark-info::before { content: ''; display: inline-block; transform: scale(0) rotate(45deg); 
-transition: transform .3s;  border-style: solid; border-color: #dedede; border-width: 0 1px 1px 0;  transform-origin: 66%; 
-background-color: #fff; position: absolute; left:16px; bottom:-5px; height: 7px; width: 7px; z-index: 10;}    
+.exp .exp-desc .title-2 {
+    font-size: 21px;
+    font-weight: normal;
+    margin: 10px 0 20px 0;
+}
 
-.exp .contribute .qmark:hover .qmark-info { transform: scale(1); }
-.exp .contribute .qmark:hover .qmark-info:before { transform: scale(1) rotate(45deg); }
+.exp .exp-desc .title-2 a:hover {
+    color: #79C8A4;
+}
+
+.exp .exp-desc .text {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.exp .contribute {
+    margin: 4rem 0;
+}
+
+.exp .contribute .con-text {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.exp .contribute .qmark {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+    display: inline-block;
+    background-color: #c4c4c4;
+    text-align: center;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 500;
+    color: #fff;
+    margin: 0 5px;
+    vertical-align: bottom;
+}
+
+.exp .contribute .qmark:hover {
+    background-color: #F3C4BB;
+}
+
+.exp .contribute .qmark .qmark-info {
+    display: inline-block;
+    transform: scale(0);
+    transition: transform .3s;
+    width: 200px;
+    padding: 10px 15px;
+    text-align: left;
+    font-size: 12px;
+    color: #233741;
+    background-color: #fff;
+    border: 1px solid #dedede;
+    border-radius: 10px;
+    position: absolute;
+    top: -65px;
+    left: -13px;
+    height: 58px;
+    transform-origin: 20% 100%;
+}
+
+.exp .contribute .qmark .qmark-info::before {
+    content: '';
+    display: inline-block;
+    transform: scale(0) rotate(45deg);
+    transition: transform .3s;
+    border-style: solid;
+    border-color: #dedede;
+    border-width: 0 1px 1px 0;
+    transform-origin: 66%;
+    background-color: #fff;
+    position: absolute;
+    left: 16px;
+    bottom: -5px;
+    height: 7px;
+    width: 7px;
+    z-index: 10;
+}
+
+.exp .contribute .qmark:hover .qmark-info {
+    transform: scale(1);
+}
+
+.exp .contribute .qmark:hover .qmark-info:before {
+    transform: scale(1) rotate(45deg);
+}
 
 
-.exp .exp-item-con1-01 .contribute .qmark .qmark-info:after { content: '현재 퍼블리싱 전체 전담'; }
-.exp .exp-item-con1-02 .contribute .qmark .qmark-info:after { content: 'OnePrint, MakuMaku 요청업무 외 전체 퍼블리싱 전담'; }
-.exp .exp-item-con1-03 .contribute .qmark .qmark-info:after { content: '퍼블리싱 전체 전담'; }
-.exp .exp-item-con1-04 .contribute .qmark .qmark-info:after { content: '퍼블리싱 전체 전담'; }
+.exp .exp-item-con1-01 .contribute .qmark .qmark-info:after {
+    content: '현재 퍼블리싱 전체 전담';
+}
 
-.exp .exp-item-con2-01 .contribute .qmark .qmark-info:after { content: 'Adprint스티커 관련 퍼블리싱 전체 전담'; }
-.exp .exp-item-con2-02 .contribute .qmark .qmark-info:after { content: '퍼블리싱 전체 전담'; }
-.exp .contribute-2 .qmark .qmark-info:after { content: '총 담당자 2명, 디자인 요청 서브 담당자'; }
+.exp .exp-item-con1-02 .contribute .qmark .qmark-info:after {
+    content: 'OnePrint, MakuMaku 요청업무 외 전체 퍼블리싱 전담';
+}
 
-.exp .contribute .progress { background-color: #dedede; display: inline-block; max-width: 300px; width: 100%;height: 10px; border-radius: 10px; position: relative; }
-.exp .contribute .progress .bar {  display: inline-block; max-width: 300px; width: 50%;height: 10px; border-radius: 10px; background-color: #79C8A4; position: absolute;top:0;left:0; }
-.exp .contribute .progress .bar::after { content: ''; position: absolute;top:-15px; left:90%;color: #79C8A4; font-size: 12px; font-weight: 500; }
+.exp .exp-item-con1-03 .contribute .qmark .qmark-info:after {
+    content: '퍼블리싱 전체 전담';
+}
 
-.exp .exp-item-con1-01 .contribute .progress .bar {width: 90%;  }
-.exp .exp-item-con1-01 .contribute .progress .bar::after { content: '90%'; }
-.exp .exp-item-con1-02 .contribute .progress .bar {width: 80%;  }
-.exp .exp-item-con1-02 .contribute .progress .bar::after { content: '80%'; }
-.exp .exp-item-con1-03 .contribute .progress .bar {width: 100%;  }
-.exp .exp-item-con1-03 .contribute .progress .bar::after { content: '100%'; }
-.exp .exp-item-con1-04 .contribute .progress .bar {width: 100%;  }
-.exp .exp-item-con1-04 .contribute .progress .bar::after { content: '100%'; }
+.exp .exp-item-con1-04 .contribute .qmark .qmark-info:after {
+    content: '퍼블리싱 전체 전담';
+}
 
-.exp .exp-item-con2-01 .contribute .progress .bar {width: 100%;  }
-.exp .exp-item-con2-01 .contribute .progress .bar::after { content: '100%'; }
-.exp .exp-item-con2-02 .contribute .progress .bar {width: 100%;  }
-.exp .exp-item-con2-02 .contribute .progress .bar::after { content: '100%'; }
+.exp .exp-item-con2-01 .contribute .qmark .qmark-info:after {
+    content: 'Adprint스티커 관련 퍼블리싱 전체 전담';
+}
+
+.exp .exp-item-con2-02 .contribute .qmark .qmark-info:after {
+    content: '퍼블리싱 전체 전담';
+}
+
+.exp .contribute-2 .qmark .qmark-info:after {
+    content: '총 담당자 2명, 디자인 요청 서브 담당자';
+}
+
+.exp .contribute .progress {
+    background-color: #dedede;
+    display: inline-block;
+    max-width: 300px;
+    width: 100%;
+    height: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.exp .contribute .progress .bar {
+    display: inline-block;
+    max-width: 300px;
+    width: 50%;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #79C8A4;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.exp .contribute .progress .bar::after {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: 90%;
+    color: #79C8A4;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.exp .exp-item-con1-01 .contribute .progress .bar {
+    width: 90%;
+}
+
+.exp .exp-item-con1-01 .contribute .progress .bar::after {
+    content: '90%';
+}
+
+.exp .exp-item-con1-02 .contribute .progress .bar {
+    width: 80%;
+}
+
+.exp .exp-item-con1-02 .contribute .progress .bar::after {
+    content: '80%';
+}
+
+.exp .exp-item-con1-03 .contribute .progress .bar {
+    width: 100%;
+}
+
+.exp .exp-item-con1-03 .contribute .progress .bar::after {
+    content: '100%';
+}
+
+.exp .exp-item-con1-04 .contribute .progress .bar {
+    width: 100%;
+}
+
+.exp .exp-item-con1-04 .contribute .progress .bar::after {
+    content: '100%';
+}
+
+.exp .exp-item-con2-01 .contribute .progress .bar {
+    width: 100%;
+}
+
+.exp .exp-item-con2-01 .contribute .progress .bar::after {
+    content: '100%';
+}
+
+.exp .exp-item-con2-02 .contribute .progress .bar {
+    width: 100%;
+}
+
+.exp .exp-item-con2-02 .contribute .progress .bar::after {
+    content: '100%';
+}
 
 
-.exp .contribute-2 .progress .bar {  width: 70%; }
-.exp .contribute-2 .progress .bar::after {  content: '70%';  }
+.exp .contribute-2 .progress .bar {
+    width: 70%;
+}
 
-.exp .exp-desc .numbering p { margin-bottom: 10px; font-size:14px; }
-.exp .exp-desc .numbering p a:hover { color:#79C8A4; }
-.exp .exp-desc .numbering .num { display: inline-block; border-radius: 100%; background-color: #c4c4c4; font-size:11px; width:15px; height: 15px; color: #fff; text-align: center; line-height: 15px; margin-right: 5px; }
+.exp .contribute-2 .progress .bar::after {
+    content: '70%';
+}
 
-    /*서브 2*/
-    .sub-main-2 { 
-      background-image: url("https://randhk.github.io/annie/img/sub2_main_img.png");
+.exp .exp-desc .numbering p {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.exp .exp-desc .numbering p a:hover {
+    color: #79C8A4;
+}
+
+.exp .exp-desc .numbering .num {
+    display: inline-block;
+    border-radius: 100%;
+    background-color: #c4c4c4;
+    font-size: 11px;
+    width: 15px;
+    height: 15px;
+    color: #fff;
+    text-align: center;
+    line-height: 15px;
+    margin-right: 5px;
+}
+
+/*서브 2*/
+.sub-main-2 {
+    background-image: url("https://randhk.github.io/annie/img/sub2_main_img.png");
+}
+
+.tabs-wrap ul.tabs-top {
+    display: flex;
+    max-width: 1140px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.tabs-wrap ul.tabs-top::after {
+    content: '';
+    display: inline-block;
+    width: 55px;
+    height: 57px;
+    background-image: url("https://randhk.github.io/annie/img/sub2_peach_hover.svg");
+    position: absolute;
+    bottom: 35px;
+    left: 51%;
+    transform: translate(-50%, -50%);
+    transition: bottom 0.3s ease-out;
+}
+
+.tabs-wrap ul.tabs-top:active::after {
+    bottom: 100px;
+}
+
+.tabs-wrap ul.tabs-top li {
+    flex-basis: 50%;
+    text-align: center;
+    padding: 80px 0;
+    position: relative;
+    background-repeat: no-repeat;
+
+}
+
+.tabs-wrap ul.tabs-top li.first {
+    background-image: url("https://randhk.github.io/annie/img/sub2_face_left.svg");
+    background-position: 99.5% 100%;
+
+}
+
+.tabs-wrap ul.tabs-top li.first.active {
+    background-image: url("https://randhk.github.io/annie/img/sub2_face_left_active.svg");
+}
+
+
+.tabs-wrap ul.tabs-top li.second {
+    background-image: url("https://randhk.github.io/annie/img/sub2_face_right.svg");
+    background-position: left bottom
+}
+
+.tabs-wrap ul.tabs-top li.second.active {
+    background-image: url("https://randhk.github.io/annie/img/sub2_face_right_active.svg");
+}
+
+.tabs-wrap ul.tabs-top li a {
+    display: inline-block;
+    background-color: #DEDEDE;
+    color: #aaa;
+    max-width: 180px;
+    max-height: 180px;
+    width: 13vw;
+    height: 13vw;
+    border-radius: 100%;
+    position: relative;
+    min-width: 100px;
+    min-height: 100px;
+    position: relative;
+}
+
+.tabs-wrap ul.tabs-top li a::after {
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-top: 2.8vw solid #DEDEDE;
+    border-bottom: none;
+    border-right: 2.5vw solid transparent;
+    border-left: 2.5vw solid transparent;
+}
+
+.tabs-wrap ul.tabs-top li.first a::after {
+    bottom: -3%;
+    right: 9%;
+    transform: rotate(-30deg);
+}
+
+.tabs-wrap ul.tabs-top li.second a::after {
+    bottom: -3%;
+    left: 9%;
+    transform: rotate(30deg);
+}
+
+.tabs-wrap ul.tabs-top li.active a::after {
+    border-top: 2.8vw solid #79C8A4;
+}
+
+.tabs-wrap ul.tabs-top li a .circle-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.3vw;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+.tabs-wrap ul.tabs-top li.active a {
+    background-color: #79C8A4;
+    color: #fff;
+}
+
+.tabs-wrap .tabs-con {
+    display: none;
+}
+
+.tabs-wrap .tabs-con.show {
+    display: block;
+}
+
+.tabs-wrap #content-2 .con-top {
+    margin: 40px auto;
+}
+
+.tabs-wrap #content-2 .con-top h3 {
+    font-weight: 500;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.tabs-wrap #content-2 .con-bottom {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0 20px;
+    justify-content: space-between;
+    max-width: 1140px;
+}
+
+.tabs-wrap #content-2 .con-bottom .design-item {
+    flex-basis: 48.5%;
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.tabs-wrap #content-2 .con-bottom .design-item img {
+    width: 100%;
+    transition: all .5s;
+}
+
+.tabs-wrap #content-2 .con-bottom .design-item:hover img {
+    transform: scale(1.2);
+}
+
+.tabs-wrap #content-2 .con-bottom .design-item .design-desc {
+    background-color: rgb(250 250 250 / 80%);
+    position: absolute;
+    bottom: -35px;
+    left: 0;
+    padding: 20px;
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    transition: all .5s;
+}
+
+.tabs-wrap #content-2 .con-bottom .design-item:hover .design-desc {
+    bottom: 0;
+}
+
+.tabs-wrap #content-2 .con-bottom .design-item .design-desc .desc-1 {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.tabs-wrap #content-2 .con-bottom .design-item .design-desc .desc-2 {
+    font-size: 1.3rem;
+    padding: 20px 0 0 0;
+}
+
+/*sub3*/
+.sub-main-about {
+    text-align: center;
+    margin: 80px 0;
+}
+
+.sub-main-about h1 {
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+.sub-main-about h2 {
+    font-size: 2rem;
+    line-height: 30px;
+    margin-top: 40px;
+}
+
+.sub-main-about h2 .font-green {
+    padding: 0 0 0 8px;
+}
+
+.about-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1140px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.about-wrap>div {
+    width: 48%;
+}
+
+.about-wrap>div.about-desc {
+    padding: 3% 0;
+}
+
+.about-wrap>div.about-desc .about-text {
+    color: #233741;
+    font-size: 1.4rem;
+    line-height: 21px;
+    margin-bottom: 40px;
+}
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+    .exp .exp-desc {
+        padding: 3%;
     }
-    .tabs-wrap ul.tabs-top {
-      display: flex;
-      max-width: 1140px;
-      margin: 0 auto;
-      position: relative;
-    }
-    .tabs-wrap ul.tabs-top::after {
-        content:'';
-        display: inline-block;
-        width: 55px;
-        height:57px;
-        background-image: url("https://randhk.github.io/annie/img/sub2_peach_hover.svg");
-        position: absolute;
-        bottom:35px;
-        left:51%;
-        transform: translate(-50%, -50%);
-        transition: bottom 0.3s ease-out;
-    }
-    .tabs-wrap ul.tabs-top:active::after{
-        bottom:100px;
-    }
-    .tabs-wrap ul.tabs-top li {
-      flex-basis: 50%;
-      text-align: center;
-      padding: 80px 0;
-      position: relative;
-      background-repeat: no-repeat;
-      
+
+    .exp .exp-desc .title-1 {
+        font-size: 1.3vw;
     }
 
-    .tabs-wrap ul.tabs-top li.first { 
-        background-image:url("https://randhk.github.io/annie/img/sub2_face_left.svg");
-        background-position: 99.5% 100%;
-
+    .exp .exp-desc .title-2 {
+        font-size: 2vw;
+        margin: 3% 0 4% 0;
     }
 
-    .tabs-wrap ul.tabs-top li.first.active { 
-        background-image:url("https://randhk.github.io/annie/img/sub2_face_left_active.svg");
+    .exp .exp-desc .text {
+        font-size: 1.5vw;
     }
 
-
-    .tabs-wrap ul.tabs-top li.second { 
-        background-image:url("https://randhk.github.io/annie/img/sub2_face_right.svg");
-        background-position: left bottom
+    .exp .contribute {
+        margin: 6% 0;
     }
 
-    .tabs-wrap ul.tabs-top li.second.active { 
-        background-image:url("https://randhk.github.io/annie/img/sub2_face_right_active.svg");
+    .exp .contribute .con-text {
+        font-size: 1.6vw;
     }
 
-     .tabs-wrap ul.tabs-top li a {  
-      display: inline-block;
-      background-color:#DEDEDE;
-      color:#aaa;
-      max-width: 180px;
-      max-height: 180px;
-      width: 13vw;
-      height: 13vw;
-      border-radius: 100%;
-      position: relative;
-      min-width: 100px;
-      min-height: 100px;
-      position: relative;
-      }
-     .tabs-wrap ul.tabs-top li a::after {  
-      content: '';
-      position:absolute;
-      width: 0px;height: 0px;
-      border-top:2.8vw solid #DEDEDE;
-      border-bottom:none;
-      border-right: 2.5vw solid transparent;
-      border-left: 2.5vw solid  transparent;
-      }
-
-     .tabs-wrap ul.tabs-top li.first a::after {  
-      bottom: -3%;
-      right: 9%;
-      transform: rotate(-30deg);
-      }
-
-     .tabs-wrap ul.tabs-top li.second a::after {  
-      bottom: -3%;
-      left: 9%;
-      transform: rotate(30deg);
-      }
-
-     .tabs-wrap ul.tabs-top li.active a::after {  
-        border-top:2.8vw solid #79C8A4;
-      }
-
-     .tabs-wrap ul.tabs-top li a .circle-text {  
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-size:1.3vw;
-      letter-spacing: 2px;
-      font-weight: 500;
+    .exp .contribute .progress {
+        max-width: 250px;
     }
 
-     .tabs-wrap ul.tabs-top li.active a{  
-      background-color:#79C8A4;
-      color:#fff;
+    .exp .exp-desc .numbering p {
+        font-size: 1.5vw;
+        margin-bottom: 2%;
     }
-    .tabs-wrap .tabs-con { display: none; }
-    .tabs-wrap .tabs-con.show { display: block; }
-
-    .tabs-wrap #content-2 .con-top { margin:40px auto; }
-    .tabs-wrap #content-2 .con-top h3 { font-weight:500; font-size:2rem; text-align: center; }
-    .tabs-wrap #content-2 .con-bottom { display: flex; flex-flow: row wrap; padding:0 20px; justify-content: space-between; max-width: 1140px; }
-    .tabs-wrap #content-2 .con-bottom .design-item {  flex-basis: 48.5%; position: relative; margin-bottom: 20px; overflow: hidden;  }
-    .tabs-wrap #content-2 .con-bottom .design-item img { width: 100%; transition:all .5s; }
-    .tabs-wrap #content-2 .con-bottom .design-item:hover img { transform: scale(1.2); }
-    .tabs-wrap #content-2 .con-bottom .design-item .design-desc { background-color: rgb(250 250 250 / 80%); 
-        position: absolute; bottom: -35px; left:0; padding: 20px; display: inline-block; width: 100%;text-align: left;transition:all .5s;
-    }
-    .tabs-wrap #content-2 .con-bottom .design-item:hover .design-desc { bottom: 0; }
-    .tabs-wrap #content-2 .con-bottom .design-item .design-desc .desc-1 { font-size:1.6rem; font-weight: 500; }
-    .tabs-wrap #content-2 .con-bottom .design-item .design-desc .desc-2 { font-size:1.3rem; padding: 20px 0 0 0;  }
-
-    /*sub3*/
-    .sub-main-about { text-align: center; margin:80px 0; }
-    .sub-main-about h1 { font-size:4rem; font-weight: 500;  }
-    .sub-main-about h2 { font-size:2rem; line-height: 30px; margin-top: 40px; }
-    .sub-main-about h2 .font-green { padding:0 0 0 8px; }
-    .about-wrap { display: flex; flex-wrap: wrap; max-width: 1140px; margin: 0 auto;    justify-content: space-between;  }
-    .about-wrap > div { width:48%; }
-    .about-wrap > div.about-desc { padding:3% 0; }
-    .about-wrap > div.about-desc .about-text { color:#233741; font-size:1.4rem; line-height: 21px; margin-bottom: 40px; }
-
-@media screen and (min-width:769px) and (max-width:1024px){
-.exp .exp-desc { padding: 3%; }
-.exp .exp-desc .title-1 { font-size:1.3vw; } 
-.exp .exp-desc .title-2 { font-size: 2vw; margin: 3% 0 4% 0; }
-.exp .exp-desc .text { font-size: 1.5vw; }  
-.exp .contribute { margin:6% 0; }
-.exp .contribute .con-text { font-size:1.6vw; }
-.exp .contribute .progress { max-width:250px; }
-.exp .exp-desc .numbering p { font-size: 1.5vw;margin-bottom: 2%; }
 
 }
 
 /*768px 미디어쿼리*/
 @media screen and (max-width:768px) {
-	
-	/*메인*/
+
+    /*메인*/
     .main .half {
-        height: 200px;
+        height: 300px;
         background-image: none;
     }
 
     .main .half:before {
-        font-size: 1.4rem;
+        font-size: 1.7rem;
         position: absolute;
         top: 85%;
         left: 50%;
         bottom: auto;
-        padding:0;
+        padding: 0;
         max-width: 55%;
         width: 100%;
 
@@ -584,21 +911,31 @@ background-color: #fff; position: absolute; left:16px; bottom:-5px; height: 7px;
     }
 
     .main .half:before {
-        color: #79C8A4 ;
-/*        background-color: #FDF3F1 ;*/
+        color: #79C8A4;
+        /*        background-color: #FDF3F1 ;*/
     }
 
     .main .half:hover:before {
-        color:#FDF3F1 ;
-      /*  background-color: #79C8A4;*/
+        color: #FDF3F1;
+        /*  background-color: #79C8A4;*/
+    }
+
+    .main .left {
+        background-image: url("https://randhk.github.io/annie/img/annie_main_bg_left.svg");
+    }
+
+    .main .right {
+        background-image: url("https://randhk.github.io/annie/img/annie_main_bg_right.svg");
+        background-position: right center;
     }
 
     .main .main-img {
         background-image: url("https://randhk.github.io/annie/img/annie_main_img_mb.svg");
         left: 50%;
         top: 45%;
-        height: 110px;
-        max-width: 300px;
+        /*height: 110px;*/
+        max-width: 430px;
+        background-position: center;
     }
 
     .main .main-img #pc-img {
@@ -635,89 +972,150 @@ background-color: #fff; position: absolute; left:16px; bottom:-5px; height: 7px;
     }
 
     /*서브 1*/
-    .sub-main { 
-    	background-image: url("https://randhk.github.io/annie/img/annie_sec_red.png");
-		background-size: auto 115%;
-	    background-position: 200% 25%;
+    .sub-main {
+        background-image: url("https://randhk.github.io/annie/img/annie_sec_red.png");
+        background-size: auto 115%;
+        background-position: 200% 25%;
 
     }
-    .sub-main .main-text{
-    	padding:0 1rem;
+
+    .sub-main .main-text {
+        padding: 0 1rem;
     }
 
     /*서브 2*/
-    .sub-main-2 { 
-      background-image: url("https://randhk.github.io/annie/img/annie_sec_ad.png");
+    .sub-main-2 {
+        background-image: url("https://randhk.github.io/annie/img/annie_sec_ad.png");
     }
-    .exp .contribute-2 { margin: 4rem 20px; }
-    .exp .contribute .progress { margin: 30px 0 0 0; }   
-    .exp .exp-item-wrap { flex-flow: wrap; }
-    .exp .exp-item-wrap .exp-item { flex-basis: 100%; max-width: 100%; }
-    .exp .exp-img img { max-width: 100%; }
-    .exp .exp-desc { padding:4rem 3rem; }
-    .exp .exp-odd .exp-img {order:1;}
-    .exp .exp-odd .exp-desc { order:2; }
 
-    .tabs-wrap #content-2 .con-bottom .design-item { flex-basis: 100%; }
+    .exp .contribute-2 {
+        margin: 4rem 20px;
+    }
+
+    .exp .contribute .progress {
+        margin: 30px 0 0 0;
+    }
+
+    .exp .exp-item-wrap {
+        flex-flow: wrap;
+    }
+
+    .exp .exp-item-wrap .exp-item {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+
+    .exp .exp-img img {
+        max-width: 100%;
+    }
+
+    .exp .exp-desc {
+        padding: 4rem 3rem;
+    }
+
+    .exp .exp-odd .exp-img {
+        order: 1;
+    }
+
+    .exp .exp-odd .exp-desc {
+        order: 2;
+    }
+
+    .tabs-wrap #content-2 .con-bottom .design-item {
+        flex-basis: 100%;
+    }
 
     /*서브 3*/
-    .sub-main-about { padding:0 20px;}
-    .sub-main-about h2 br { display: none; }
-    .about-wrap {padding:0 20px;  margin:0 auto 80px auto; } 
-    .about-wrap > div { width:100%; }
-    .about-wrap > div.about-desc { padding:5% 0; }
-    .about-wrap .link-wrap { text-align: center; }
+    .sub-main-about {
+        padding: 0 20px;
+    }
+
+    .sub-main-about h2 br {
+        display: none;
+    }
+
+    .about-wrap {
+        padding: 0 20px;
+        margin: 0 auto 80px auto;
+    }
+
+    .about-wrap>div {
+        width: 100%;
+    }
+
+    .about-wrap>div.about-desc {
+        padding: 5% 0;
+    }
+
+    .about-wrap .link-wrap {
+        text-align: center;
+    }
 
 }
 
 /*320px -767px 미디어쿼리*/
-@media screen and (min-width:320px)  and (max-width:600px) {
-	/*메인*/
+@media screen and (min-width:320px) and (max-width:600px) {
+
+    /*메인*/
     .main .half:before {
         font-size: 1.4rem;
         max-width: 130px;
 
     }
 
-	/*서브 1*/
-	 .sub-main { background-image:none; position: relative; }	
-	 .sub-main::after { 
-	 	content: '';
-	 	display: inline-block;
-	 	width: 100%;
-	 	height: 100%;
-	 	opacity: 0.5;
-	 	background-image: url("https://randhk.github.io/annie/img/annie_sec_red.png");
-	 	background-repeat: no-repeat;
-		background-size: auto 100%;
-	    background-position: -50% center;
-	    position: absolute;
-	    top:0;
-	    left:0;
-	    z-index: -1;
+    .main .main-img {
+        max-width: 350px;
+    }
 
-	 }
-     /*서브 2*/
-      .sub-main-2 { background-image:none; }
-      .sub-main-2::after { 
-      background-image: url("https://randhk.github.io/annie/img/annie_sec_ad.png");
-      font-size: 2rem;
-      }
-      .tabs-wrap ul.tabs-top li a::after {  
-      border-top:3.8vw solid #DEDEDE;
-      border-right: 3.5vw solid transparent;
-      border-left: 3.5vw solid  transparent;
-      }
-     .tabs-wrap ul.tabs-top li.first a::after {  
-      bottom: 0%;
-      }
+    /*서브 1*/
+    .sub-main {
+        background-image: none;
+        position: relative;
+    }
 
-     .tabs-wrap ul.tabs-top li.second a::after {  
-      bottom: 0;
-      }
+    .sub-main::after {
+        content: '';
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        opacity: 0.5;
+        background-image: url("https://randhk.github.io/annie/img/annie_sec_red.png");
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+        background-position: -50% center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
 
-     .tabs-wrap ul.tabs-top li.active a::after {  
-        border-top:3.8vw solid #79C8A4;
-      }
+    }
+
+    /*서브 2*/
+    .sub-main-2 {
+        background-image: none;
+    }
+
+    .sub-main-2::after {
+        background-image: url("https://randhk.github.io/annie/img/annie_sec_ad.png");
+        font-size: 2rem;
+    }
+
+    .tabs-wrap ul.tabs-top li a::after {
+        border-top: 3.8vw solid #DEDEDE;
+        border-right: 3.5vw solid transparent;
+        border-left: 3.5vw solid transparent;
+    }
+
+    .tabs-wrap ul.tabs-top li.first a::after {
+        bottom: 0%;
+    }
+
+    .tabs-wrap ul.tabs-top li.second a::after {
+        bottom: 0;
+    }
+
+    .tabs-wrap ul.tabs-top li.active a::after {
+        border-top: 3.8vw solid #79C8A4;
+    }
 
 }
