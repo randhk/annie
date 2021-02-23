@@ -364,7 +364,7 @@
 .exp .contribute { margin:4rem 0; }
 .exp .contribute .con-text { font-size:16px; font-weight: 500; }
 .exp .contribute .qmark { position: relative; width: 18px; height: 18px; border-radius: 100%;  display: inline-block; background-color: #c4c4c4; text-align: center; font-size:14px; line-height: 18px; font-weight: 500; color: #fff; margin:0 5px; vertical-align: bottom;}
-
+.exp .contribute .qmark:hover { background-color:#F3C4BB;  }
 .exp .contribute .qmark .qmark-info {  display: inline-block; transform: scale(0); transition: transform .3s; width: 200px; 
 padding:10px 15px; text-align: left; font-size:12px; color:#233741; background-color: #fff;border:1px solid #dedede; 
 border-radius: 10px; position:absolute; top:-65px; left:-13px; height: 58px; transform-origin: 20% 100%; }
@@ -448,7 +448,7 @@ background-color: #fff; position: absolute; left:16px; bottom:-5px; height: 7px;
 
     .tabs-wrap ul.tabs-top li.first { 
         background-image:url("https://randhk.github.io/annie/img/sub2_face_left.svg");
-        background-position: right bottom;
+        background-position: 99.5% 100%;
 
     }
 
