@@ -89,6 +89,10 @@
     transform-origin: 30% 30%;
 }
 
+.main .main-img #pc-img .head2  {
+    transform-origin: 80% 80%;
+}
+
 .main .main-img #pc-img .spinner {
     animation: spin 6s linear infinite;
     transform-origin: 25% 77%;
@@ -99,7 +103,52 @@
     -webkit-animation-direction: reverse;
     transform-origin: 13.5% 62.5%;
 }
+.txt {     fill: #233741; transition: none; }
+ #text1 {
+     animation: show 3s;
+}
 
+ @keyframes show {
+     to {
+        fill: #fff;
+    }
+     from {
+         fill: #fff;
+    }
+}
+ #text2 {
+     animation: show 5s;
+}
+ @keyframes show {
+     to {
+        fill: #fff;
+    }
+     from {
+         fill: #fff;
+    }
+}
+#text3 {
+     animation: show 7s;
+}
+ @keyframes show {
+     to {
+        fill: #fff;
+    }
+     from {
+         fill: #fff;
+    }
+}
+#text4 {
+     animation: show 9s;
+}
+ @keyframes show {
+     to {
+        fill:#233741;
+    }
+     from {
+         fill: #fff;
+    }
+}
 
 @keyframes spin {
     from {
@@ -527,21 +576,21 @@ background-color: #fff; position: absolute; left:16px; bottom:-5px; height: 7px;
         padding:0;
         max-width: 55%;
         width: 100%;
-        padding: 2% 4%;
+
         text-align: center;
-        border-radius: 40px;
+
         transform: translate(-50%, -50%);
         white-space: nowrap;
     }
 
     .main .half:before {
         color: #79C8A4 ;
-        background-color: #FDF3F1 ;
+/*        background-color: #FDF3F1 ;*/
     }
 
     .main .half:hover:before {
-        color: #79C8A4;
-        background-color: #FDF3F1;
+        color:#FDF3F1 ;
+      /*  background-color: #79C8A4;*/
     }
 
     .main .main-img {
@@ -627,7 +676,7 @@ background-color: #fff; position: absolute; left:16px; bottom:-5px; height: 7px;
     .main .half:before {
         font-size: 1.4rem;
         max-width: 130px;
-        padding:3% 4%;
+
     }
 
 	/*서브 1*/
