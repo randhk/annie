@@ -925,7 +925,7 @@
         left: 50%;
         top: 44%;
         /*height: 110px;*/
-        max-width: 410px;
+        max-width: 400px;
         background-position: center;
     }
 
@@ -1050,7 +1050,7 @@
     /*메인*/
 
     .main .main-img {
-        max-width: 350px;
+        max-width: 340px;
     }
     .main .half:before {
         top: 88%;
