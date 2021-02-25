@@ -72,15 +72,21 @@ header nav.menu a {
     margin-left: 20px;
     position: relative;
 }
+header nav.menu a:hover {
+	color:#79C8A4;
+}
 
 header nav.menu a:hover::after {
     content: '';
     position: absolute;
-    border-top: 2px solid #F3C4BB;
-    top: -7px;
-    left: 0;
-    width: 100%;
+   	background-color:#79C8A4;
+    top: -12px;
+    left: 45%;
+    width: 6px;
+    height:6px;
+    border-radius: 100%;
     display: inline-block;
+
 }
 
 .head-sub {
@@ -260,6 +266,7 @@ footer .foot-inner .footer-logo img {
     }
 
     header nav.menu a {
+    	margin-left: 10px;
         font-size: 1.3rem;
     }
 

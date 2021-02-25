@@ -727,7 +727,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 1.3vw;
+    font-size: 1.8rem;
     letter-spacing: 2px;
     font-weight: 500;
 }
@@ -977,6 +977,10 @@
     /*서브 2*/
     .sub-main-2 {
         background-image: url("https://randhk.github.io/annie/img/annie_sec_ad.png");
+    }
+
+    .tabs-wrap ul.tabs-top li a .circle-text {
+        font-size: 1.6rem;
     }
 
     .exp .contribute-2 {
