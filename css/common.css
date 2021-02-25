@@ -30,12 +30,12 @@
 
 }
 
-.main .half a {
+.main .half > a {
     width: 100%;
     height: 100%;
 }
 
-.main .half:before {
+.main .half .link {
     font-size: 2.5rem;
     font-weight: 500;
     position: absolute;
@@ -44,20 +44,21 @@
     width: 100%;
     bottom: 8%;
     display: inline-block;
+    border:none;
 }
 
-.main .half:hover:before {
+.main .half:hover .link {
     color: #fff;
+    background-color:transparent;  
 }
 
-.main .left:before {
-    content: 'WEB PUBLISH';
+.main .link-left {
     color: #79C8A4;
     right: -20px;
+    text-align: left;
 }
 
-.main .right:before {
-    content: 'DESIGN';
+.main .link-right {
     color: #79C8A4;
     left: -20px;
     text-align: right;
@@ -890,37 +891,30 @@
 
     /*메인*/
     .main .half {
-        height: 300px;
+        height: 400px;
         background-image: none;
     }
 
-    .main .half:before {
-        font-size: 1.7rem;
+    .main .half .link {
+        font-size: 2.1rem;
         position: absolute;
-        top: 85%;
+        top: 89%;
         left: 50%;
         bottom: auto;
         padding: 0;
-        max-width: 55%;
+        max-width: 100%;
         width: 100%;
-
         text-align: center;
-
+        letter-spacing: 2px;
         transform: translate(-50%, -50%);
         white-space: nowrap;
+         color: #79C8A4;
     }
 
-    .main .half:before {
-        color: #79C8A4;
-        /*        background-color: #FDF3F1 ;*/
-    }
 
-    .main .half:hover:before {
-        color: #FDF3F1;
-        /*  background-color: #79C8A4;*/
-    }
 
-    .main .left {
+    
+/*    .main .left {
         background-image: url("https://randhk.github.io/annie/img/annie_main_bg_left.svg");
     }
 
@@ -928,13 +922,13 @@
         background-image: url("https://randhk.github.io/annie/img/annie_main_bg_right.svg");
         background-position: right center;
     }
-
+*/
     .main .main-img {
-        background-image: url("https://randhk.github.io/annie/img/annie_main_img_mb.svg");
+        background-image: url("https://randhk.github.io/annie/img/annie_main_img_mb_new.svg");
         left: 50%;
-        top: 45%;
+        top: 44%;
         /*height: 110px;*/
-        max-width: 430px;
+        max-width: 410px;
         background-position: center;
     }
 
@@ -1057,14 +1051,13 @@
 @media screen and (min-width:320px) and (max-width:600px) {
 
     /*메인*/
-    .main .half:before {
-        font-size: 1.4rem;
-        max-width: 130px;
-
-    }
 
     .main .main-img {
         max-width: 350px;
+    }
+    .main .half:before {
+        top: 88%;
+        font-size: 1.75rem;
     }
 
     /*서브 1*/
