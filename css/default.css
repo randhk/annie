@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap');
 
 /*ALL*/
+
 body {
     font-family: 'Roboto', 'Noto Sans KR', sans-serif;
 }
@@ -52,6 +53,13 @@ a.link:hover {
     text-align: center;
 }
 
+
+.loading { width: 100%; height: 100%; top: 0px; left: 0px; position: fixed; display: block;  
+	background-color: rgb(253 243 241 / 100%); z-index: 10; text-align: center;
+
+}
+.loading .loading-image { position: absolute; top:50%; left:50%; transform: translate(-50%, -50%);z-index: 50; }
+
 header .header-inner {
     max-width: 1140px;
     margin: 0 auto;
@@ -72,11 +80,11 @@ header nav.menu a {
     margin-left: 20px;
     position: relative;
 }
-header nav.menu a:hover {
+header nav.menu a.active, header nav.menu a:hover {
 	color:#79C8A4;
 }
 
-header nav.menu a:hover::after {
+header nav.menu a.active::after, header nav.menu a:hover::after {
     content: '';
     position: absolute;
    	background-color:#79C8A4;
@@ -167,7 +175,7 @@ header nav.menu a:hover::after {
     flex-basis: 50%;
     background-image: url("https://randhk.github.io/annie/img/sub1_footerNav_bg.svg");
     background-repeat: no-repeat;
-    height: 20vh;
+    height: 17vh;
     background-size: 27%;
     transition: all .3s;
 }

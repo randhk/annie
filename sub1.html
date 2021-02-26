@@ -22,18 +22,19 @@ jQuery(document).ready(function () {
 
     $(window).scroll(function () {
         if ($(window).scrollTop() > elementPosition.top) {
-            $('.intro-con-1').css('position', 'fixed');
-            $('.intro-con-2').css('position', 'static');
+            $('.intro-con-1').fadeOut(700).css('position', 'fixed');
+            $('.intro-con-2').fadeIn(700).css('position', 'static');
         } else {
-            $('.intro-con-1').css('position', 'static');
-            $('.intro-con-2').css('position', 'fixed');
+            $('.intro-con-1').fadeIn(700).css('position', 'static');
+            $('.intro-con-2').fadeOut(700).css('position', 'fixed');
             ;
         }
     });
 });
 </script>
 <body>
-    <header class="head-sub">
+  <div class="loading"><img class="loading-image" src="https://randhk.github.io/annie/img/annie_main_loading.svg" alt="Loading"></div>
+  <header class="head-sub">
 	</header>
     <main class="sub-main">
         <div class="main-text">
