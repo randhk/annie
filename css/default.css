@@ -144,6 +144,10 @@ header nav.menu a:hover::after {
     background-position: 0 -145px;
 }
 
+.hireme .contact li.kakao {
+     background-image: url("https://randhk.github.io/annie/img/annie_aside_img_1.svg");
+}
+
 .hireme .contact li:last-child {
     margin-right: 0;
 }
