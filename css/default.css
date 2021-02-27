@@ -2,7 +2,9 @@
 
 /*ALL*/
 ::selection { background-color: transparent; }
-
+::-webkit-selection  { background-color: transparent; }
+::-moz-selection  { background-color: transparent; }
+::-ms-selection  { background-color: transparent; }
 body {
     font-family: 'Roboto', 'Noto Sans KR', sans-serif;
 }
