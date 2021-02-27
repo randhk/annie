@@ -1,16 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap');
 
 /*ALL*/
-::selection { background-color: transparent; }
-::-webkit-selection  { background-color: transparent; }
-::-moz-selection  { background-color: transparent; }
-::-ms-selection  { background-color: transparent; }
-a:active::selection { background-color: transparent; } 
-a:focus::selection { background-color: transparent; } 
+html {
+    -ms-overflow-style: scrollbar;
+    -webkit-tap-highlight-color: transparent;
+}
 body {
     font-family: 'Roboto', 'Noto Sans KR', sans-serif;
+	  -webkit-font-smoothing: antialiased;
+	  -moz-osx-font-smoothing: auto;    
 }
 
+body::selection {
+    background-color: #FDF3F1;
+    color:#79C8A4;
+}
 body>* {
     color: #233741;
 }
