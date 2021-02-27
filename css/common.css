@@ -29,9 +29,6 @@
     background-color: #79C8A4;
 
 }
-.main .half:hover .link::-webkit-selection  { background-color:transparent; }
-.main .half:hover .link:active::-webkit-selection { background-color:transparent; }
-.main .half:hover .link:focus::-webkit-selection { background-color:transparent; }
 
 .main .half > a {
     width: 100%;
