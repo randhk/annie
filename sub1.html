@@ -14,24 +14,8 @@
     <script src="https://randhk.github.io/annie/js/default.js"></script>
 
     <title> Work Experience I  |  Annie's Portfolio</title>
-
 </head>
-<script type="text/javascript">
-jQuery(document).ready(function () {
-    var elementPosition = $('.intro-con-1').offset();
 
-    $(window).scroll(function () {
-        if ($(window).scrollTop() > elementPosition.top) {
-            $('.intro-con-1').fadeOut(700).css('position', 'fixed');
-            $('.intro-con-2').fadeIn(700).css('position', 'static');
-        } else {
-            $('.intro-con-1').fadeIn(700).css('position', 'static');
-            $('.intro-con-2').fadeOut(700).css('position', 'fixed');
-            ;
-        }
-    });
-});
-</script>
 <body>
   <div class="loading"><img class="loading-image" src="https://randhk.github.io/annie/img/annie_main_loading.svg" alt="Loading"></div>
   <header class="head-sub">
@@ -247,4 +231,20 @@ jQuery(document).ready(function () {
      <footer id="foot">
     </footer>			
 </body>
+<script type="text/javascript">
+jQuery(document).ready(function () {
+    var elementPosition = $('.intro-con-1').offset();
+
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > elementPosition.top) {
+            $('.intro-con-1').fadeOut(700).css('position', 'fixed');
+            $('.intro-con-2').fadeIn(700).css('position', 'static');
+        } else {
+            $('.intro-con-1').fadeIn(700).css('position', 'static');
+            $('.intro-con-2').fadeOut(700).css('position', 'fixed');
+            ;
+        }
+    });
+});
+</script>
 </html>

@@ -9,6 +9,20 @@ jQuery(document).ready(function() {
         $(".hireme").load("https://randhk.github.io/annie/hireMe.html");
         $("#foot").load("https://randhk.github.io/annie/footer.html");
 
+        $( window ).scroll( function() {
+            if ( $( this ).scrollTop() > 200 ) {
+                $( '#back-to-top' ).fadeIn();
+            } else {
+                $( '#back-to-top' ).fadeOut();
+            }
+
+            $( '#back-to-top' ).on('click', function() {
+                $('html, body').animate({ 
+                scrollTop: 0 
+                }, 1000);
+            });
+        });  
+
 	    var swiper = new Swiper('.swiper-container', {
 	      pagination: {
 	        el: '.swiper-pagination',
@@ -25,16 +39,5 @@ jQuery(document).ready(function() {
         $(this).closest('li').addClass('active');
 
     });
-
-        $( window ).scroll( function() {
-          if ( $( this ).scrollTop() > 200 ) {
-            $( '#back-to-top' ).fadeIn();
-          } else {
-            $( '#back-to-top' ).fadeOut();
-          }
-        } );
-        $( '#back-to-top' ).click( function() {
-          $( 'html, body' ).animate( { scrollTop : 0 }, 400 );
-          return false;
-        } );        
+        
 });
