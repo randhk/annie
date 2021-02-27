@@ -508,7 +508,7 @@
 }
 
 .exp .contribute-2 .qmark .qmark-info:after {
-    content: '총 담당자 2명, 디자인 요청 서브 담당자';
+    content: ' Adprint.jp 스티커 디자인 담당';
 }
 
 .exp .contribute .progress {
@@ -593,11 +593,11 @@
 
 
 .exp .contribute-2 .progress .bar {
-    width: 50%;
+    width: 70%;
 }
 
 .exp .contribute-2 .progress .bar::after {
-    content: '50%';
+    content: '70%';
 }
 
 .exp .exp-desc .numbering p {
