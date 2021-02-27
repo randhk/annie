@@ -10,7 +10,6 @@ jQuery(document).ready(function() {
         $("#foot").load("https://randhk.github.io/annie/footer.html");
 
         $( window ).scroll( function() {
-            e.preventDefault();
             if ( $( this ).scrollTop() > 200 ) {
                 $( '#back-to-top' ).fadeIn();
             } else {
@@ -21,7 +20,7 @@ jQuery(document).ready(function() {
                 $('html, body').animate({ 
                 scrollTop: 0 
                 }, 1000);
-                return false;
+                e.preventDefault();
             });
         });  
 
