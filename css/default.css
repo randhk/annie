@@ -195,7 +195,7 @@ header nav.menu a.active::after, header nav.menu a:hover::after {
     flex-basis: 50%;
     background-image: url("https://randhk.github.io/annie/img/sub1_footerNav_bg.svg");
     background-repeat: no-repeat;
-    height: 17vh;
+    height: 22vh;
     background-size: 27%;
     transition: all .3s;
 }
@@ -291,7 +291,7 @@ footer .foot-inner .footer-logo img {
 
 @media screen and (max-width:768px) {
     header .header-inner {
-        padding: 2rem 1rem;
+        padding: 2rem;
     }
 
     header .logo img {
@@ -314,7 +314,7 @@ footer .foot-inner .footer-logo img {
     .hireme .words {
         font-size: 5.5vw;
         padding: 0 2rem;
-        letter-spacing: 3px;
+        letter-spacing: 2px;
     }
 
     footer .foot-inner {
@@ -333,19 +333,25 @@ footer .foot-inner .footer-logo img {
     .page-nav-wrap .page-nav-area {
         flex-basis: 100%;
         background-image: none;
-        height: 22vh;
+        height: 17vh;
     }
 
     .page-nav-wrap .page-nav-area:hover {
         background-image: none;
     }
-
-    .page-nav-wrap .page-nav-left .page-nav-text .text-top {
-        text-align: left;
-    }
+	.page-nav-wrap .page-nav-right {
+		height: 22vh;
+	}
+	.page-nav-wrap .page-nav-area .page-nav-text .text-top {
+		padding:0 13vw;
+		text-align: left;
+	}
+	.page-nav-wrap .page-nav-area .page-nav-text .text-bottom {
+		left: 13vw;
+	}
 
     .page-nav-wrap .page-nav-left .page-nav-text .text-bottom {
-        left: 20%;
+        left: 13vw;
         width: initial;
         display: inline-table;
     }
