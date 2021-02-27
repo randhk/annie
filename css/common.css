@@ -597,7 +597,7 @@
 }
 
 .exp .contribute-2 .progress .bar::after {
-    content: '70%';
+    content: '50%';
 }
 
 .exp .exp-desc .numbering p {
