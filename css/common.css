@@ -1035,6 +1035,11 @@
     .sub-main-2 {
         background-image: url("https://randhk.github.io/annie/img/annie_sec_ad.png");
     }
+    .tabs-wrap ul.tabs-top li.first {
+    background-image: url("https://randhk.github.io/annie/img/sub2_face_left.svg");
+    background-position: 99.9% 100%;
+
+    }
 
     .tabs-wrap ul.tabs-top li a .circle-text {
         font-size: 1.6rem;
