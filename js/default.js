@@ -28,6 +28,10 @@ jQuery(document).ready(function() {
 	      pagination: {
 	        el: '.swiper-pagination',
 	      },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },          
 	    });
 	    
         $('.tabs-wrap > ul.tabs-top > li > a').on('click', function (event) {
