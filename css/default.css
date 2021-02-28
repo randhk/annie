@@ -43,19 +43,19 @@ a.link:hover {
 }
 
 .font-pink {
-    color: #F3C4BB;
+    color: #F3C4BB!important;
 }
 
 .font-green {
-    color: #79C8A4;
+    color: #79C8A4!important;
 }
 
 .font-black {
-    color: #233741;
+    color: #233741!important;
 }
 
 .font-gray {
-    color: #dedede;
+    color: #dedede!important;
 }
 
 .ta-c {

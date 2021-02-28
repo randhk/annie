@@ -353,7 +353,12 @@
     flex-basis: 50%;
     width: 50%;
 }
-
+.exp .exp-item-wrap .exp-img .swiper-button-next { right:25px; } 
+.exp .exp-item-wrap .exp-img .swiper-button-prev { left:25px; }
+.exp .exp-item-wrap .exp-img .swiper-button-next, 
+.exp .exp-item-wrap .exp-img .swiper-button-prev {
+    color:#fafafa;
+}
 .exp .exp-item-wrap .exp-img .swiper-container .swiper-pagination {
     bottom: 20px;
 }
@@ -484,27 +489,27 @@
 
 
 .exp .exp-item-con1-01 .contribute .qmark .qmark-info:after {
-    content: '현재 퍼블리싱 전체 전담';
+    content: '퍼블리싱 전담';
 }
 
 .exp .exp-item-con1-02 .contribute .qmark .qmark-info:after {
-    content: 'OnePrint, MakuMaku 요청업무 외 전체 퍼블리싱 전담';
+    content: 'OnePrint, MakuMaku 요청업무 외 퍼블리싱 전담';
 }
 
 .exp .exp-item-con1-03 .contribute .qmark .qmark-info:after {
-    content: '퍼블리싱 전체 전담';
+    content: '퍼블리싱 전담';
 }
 
 .exp .exp-item-con1-04 .contribute .qmark .qmark-info:after {
-    content: '퍼블리싱 전체 전담';
+    content: '퍼블리싱 전담';
 }
 
 .exp .exp-item-con2-01 .contribute .qmark .qmark-info:after {
-    content: 'Adprint스티커 관련 퍼블리싱 전체 전담';
+    content: '스티커 퍼블리싱 전담';
 }
 
 .exp .exp-item-con2-02 .contribute .qmark .qmark-info:after {
-    content: '퍼블리싱 전체 전담';
+    content: '퍼블리싱 전담';
 }
 
 .exp .contribute-2 .qmark .qmark-info:after {
@@ -521,6 +526,39 @@
     position: relative;
 }
 
+ @keyframes progress-70 {
+   0% {
+      width: 0px;
+   }
+   100% {
+      width: 70%;
+   }
+}
+ @keyframes progress-80 {
+   0% {
+      width: 0px;
+   }
+   100% {
+      width: 80%;
+   }
+}
+ @keyframes progress-90 {
+   0% {
+      width: 0px;
+   }
+   100% {
+      width: 90%;
+   }
+}
+ @keyframes progress-100 {
+   0% {
+      width: 0px;
+   }
+   100% {
+      width: 100%;
+   }
+}
+
 .exp .contribute .progress .bar {
     display: inline-block;
     max-width: 300px;
@@ -531,6 +569,7 @@
     position: absolute;
     top: 0;
     left: 0;
+    animation-duration: 5s;
 }
 
 .exp .contribute .progress .bar::after {
@@ -544,14 +583,16 @@
 }
 
 .exp .exp-item-con1-01 .contribute .progress .bar {
-    width: 90%;
-}
+      width: 90%;
+      animation-name: progress-90;
+}   
 
 .exp .exp-item-con1-01 .contribute .progress .bar::after {
     content: '90%';
 }
 
 .exp .exp-item-con1-02 .contribute .progress .bar {
+    animation-name: progress-80;
     width: 80%;
 }
 
@@ -560,6 +601,7 @@
 }
 
 .exp .exp-item-con1-03 .contribute .progress .bar {
+    animation-name: progress-100;
     width: 100%;
 }
 
@@ -568,6 +610,7 @@
 }
 
 .exp .exp-item-con1-04 .contribute .progress .bar {
+    animation-name: progress-100;
     width: 100%;
 }
 
@@ -576,6 +619,7 @@
 }
 
 .exp .exp-item-con2-01 .contribute .progress .bar {
+    animation-name: progress-100;
     width: 100%;
 }
 
@@ -584,6 +628,7 @@
 }
 
 .exp .exp-item-con2-02 .contribute .progress .bar {
+    animation-name: progress-100;
     width: 100%;
 }
 
@@ -593,6 +638,7 @@
 
 
 .exp .contribute-2 .progress .bar {
+    animation-name: progress-70;
     width: 70%;
 }
 
@@ -662,7 +708,7 @@
 
 .tabs-wrap ul.tabs-top li.first {
     background-image: url("https://randhk.github.io/annie/img/sub2_face_left.svg");
-    background-position: 99.5% 100%;
+    background-position: 100% 100%;
 
 }
 
@@ -849,6 +895,15 @@
     margin-bottom: 40px;
 }
 
+.resume-wrap { 
+    max-width: 1140px;
+    margin: 0 auto;
+    display: grid;
+
+    grid-template-rows:30%;
+    grid-template-columns:70%;
+ }
+
 @media screen and (min-width:769px) and (max-width:1024px) {
     .exp .exp-desc {
         padding: 3%;
@@ -974,6 +1029,8 @@
         padding: 0 2rem;
     }
 
+    .exp .exp-img img { max-width: 100%; }
+
     /*서브 2*/
     .sub-main-2 {
         background-image: url("https://randhk.github.io/annie/img/annie_sec_ad.png");
@@ -1000,11 +1057,10 @@
         flex-basis: 100%;
         max-width: 100%;
     }
-
-    .exp .exp-img img {
-        max-width: 100%;
+    .exp .exp-item-wrap .exp-img .swiper-button-next, 
+    .exp .exp-item-wrap .exp-img .swiper-button-prev {
+        display: none;
     }
-
     .exp .exp-desc {
         padding: 4rem 3rem;
     }
