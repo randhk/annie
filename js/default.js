@@ -9,13 +9,24 @@ jQuery(document).ready(function() {
         $(".hireme").load("https://randhk.github.io/annie/hireMe.html");
         $("#foot").load("https://randhk.github.io/annie/footer.html");
 
+        
+        const elementPosition = $('header').offset();
+        $(window).scroll(function () {
+          
+            if ($(window).scrollTop() > elementPosition.top) {
+                $('header').addClass('active');
+            } else {
+                $('header').removeClass('active');
+            }
+        });
+
         $( window ).scroll( function() {
             if ( $( this ).scrollTop() > 200 ) {
                 $( '#back-to-top' ).fadeIn();
             } else {
                 $( '#back-to-top' ).fadeOut();
             }
-
+           
             $( '#back-to-top' ).on('click', function() {
                 $('html, body').animate({ 
                 scrollTop: 0 
