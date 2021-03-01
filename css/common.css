@@ -897,12 +897,53 @@
 
 .resume-wrap { 
     max-width: 1140px;
-    margin: 0 auto;
+    margin: 0 auto 10rem auto;
+    padding: 0 2rem;
     display: grid;
+    grid-template-columns:  30% 60% 1fr;
+    column-gap:10%;
+}
+.resume-wrap .resume-con .intro {
+    padding:5rem 0 0 0;
+}
+.resume-wrap .resume-con .intro h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #79C8A4;
+    margin: 0 0 10px 0;
+    border-bottom: 0px solid #dedede;
+    padding: 0 0 10px 0;
+    letter-spacing: 0.5px;
+}
+.resume-wrap .resume-con .intro p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+.resume-wrap .resume-con .intro p:last-child {
+    margin:0;
+}
+.resume-wrap .resume-con .intro p strong {
+    display: block;
+    font-weight: bold;
+}
+.resume-wrap .resume-con1 .intro-1 {
+    text-align: center;
+}
+.resume-wrap .resume-con1 .intro-3 p,
+.resume-wrap .resume-con1 .intro-4 p
+ { margin: 0 0 10px 0; }
 
-    grid-template-rows:30%;
-    grid-template-columns:70%;
- }
+.resume-wrap .resume-con1 .intro-3 p > span {display: inline-block; height:15px; width:15px; text-align: center; margin:0 10px 0 0;}
+ { margin: 0 0 10px 0; }
+.resume-wrap .resume-con1 .intro-3 p a:hover {
+    color:#79C8A4;
+}
+
+.resume-wrap .resume-con2 .intro-6 p, 
+.resume-wrap .resume-con2 .intro-7 p { margin:0 0 25px 0; }
+.resume-wrap .resume-con2 .intro-6 p em, 
+.resume-wrap .resume-con2 .intro-7 p em { display: block; margin:0 0 5px 0;}
+ { margin:0 0 10px 0; }
 
 @media screen and (min-width:769px) and (max-width:1024px) {
     .exp .exp-desc {
@@ -1107,7 +1148,10 @@
     .about-wrap .link-wrap {
         text-align: center;
     }
-
+    .resume-wrap { 
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+        column-gap: 0;
+    }
 }
 
 /*320px -767px 미디어쿼리*/
