@@ -70,7 +70,7 @@ a.link:hover {
     position: fixed;
     display: block;
     background-color: rgb(253 243 241 / 100%);
-    z-index: 10;
+    z-index: 101;
     text-align: center;
 
 }
