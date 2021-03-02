@@ -31,7 +31,7 @@ jQuery(document).ready(function() {
             
             $( '#back-to-top' ).click(function(e){
                 e.preventDefault();
-                $('html, body').s.animate({ 
+                $('html, body').stop().animate({ 
                 scrollTop: 0 
                 }, 500);
 
