@@ -292,7 +292,7 @@
     background-size: cover;
     background-position: 200px 0;
     position: relative;
-    margin:78px 0 0 0;
+    margin:77px 0 0 0;
 }
 
 .sub-main .main-text {
@@ -1084,7 +1084,7 @@
         background-image: url("https://randhk.github.io/annie/img/annie_sec_red.png");
         background-size: auto 115%;
         background-position: 200% 25%;
-
+        margin:65px 0 0 0;
     }
 
     .sub-main .main-text {
@@ -1172,7 +1172,7 @@
     .resume-wrap { 
         grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
         column-gap: 0;
-        margin: 2rem auto 8rem auto;
+        margin: 6.5rem auto 8rem auto;
     }
 }
 
