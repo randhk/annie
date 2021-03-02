@@ -26,12 +26,13 @@ jQuery(document).ready(function() {
             } else {
                 $( '#back-to-top' ).fadeOut();
             }
-           
-            $( '#back-to-top' ).on('click', function() {
-                $('html, body').animate({ 
+            
+            $( '#back-to-top' ).click(function(e){
+                e.preventDefault();
+                $('html, body').stop().animate({ 
                 scrollTop: 0 
                 }, 1000);
-                e.preventDefault();
+
             });
         });  
 

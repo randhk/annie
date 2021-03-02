@@ -97,6 +97,7 @@ header {
 	top:0;
     display:inline-block;
     width:100%;		
+    z-index: 100;
 }
 header.active { 
     position: fixed;
@@ -144,14 +145,14 @@ header nav.menu a.active::after, header nav.menu a:hover::after {
     border-bottom: 1px solid #FDF3F1;
 }
 
-.hireme {
+.hireme, .hireme-sub4 {
     text-align: center;
     margin: 8rem 0;
     display: inline-block;
     width: 100%;
 }
 
-.hireme .chara {
+.hireme .chara,.hireme-sub4 .chara  {
     background-image: url("https://randhk.github.io/annie/img/annie_aside_img.svg");
     background-repeat: no-repeat;
     background-position: 0 -39px;
@@ -160,25 +161,25 @@ header nav.menu a.active::after, header nav.menu a:hover::after {
     height: 106px;
 }
 
-.hireme .words {
+.hireme .words, .hireme-sub4 .words {
     font-size: 35px;
     letter-spacing: 4px;
     font-weight: bold;
     margin: 40px 0;
 }
 
-.hireme .contact {
+.hireme .contact, .hireme-sub4 .contact {
     display: flex;
     justify-content: center;
 }
 
-.hireme .contact a {
+.hireme .contact a, .hireme-sub4 .contact a {
     display: inline-block;
     width: 100%;
     height: 100%;
 }
 
-.hireme .contact li {
+.hireme .contact li,.hireme-sub4 .contact li {
     margin-right: 25px;
     background-repeat: no-repeat;
     display: inline-block;
@@ -187,19 +188,23 @@ header nav.menu a.active::after, header nav.menu a:hover::after {
     background-image: url("https://randhk.github.io/annie/img/annie_aside_img.svg");
 }
 
-.hireme .contact li.phone {
+.hireme .contact li.phone, .hireme-sub4 .contact li.phone {
     background-position: 0 -185px;
 }
 
-.hireme .contact li.mail {
+.hireme .contact li.mail, .hireme-sub4 .contact li.mail {
     background-position: 0 -145px;
 }
 
-.hireme .contact li.kakao {
+.hireme .contact li.kakao, .hireme-sub4 .contact li.kakao {
      background-image: url("https://randhk.github.io/annie/img/annie_aside_img_1.svg");
 }
 
-.hireme .contact li:last-child {
+.hireme-sub4 .contact li.pdf {
+     background-image: url("https://randhk.github.io/annie/img/annie_aside_img_2.svg");
+}
+
+.hireme .contact li:last-child, .hireme-sub4 .contact li:last-child {
     margin-right: 0;
 }
 
@@ -213,9 +218,11 @@ header nav.menu a.active::after, header nav.menu a:hover::after {
     flex-basis: 50%;
     background-image: url("https://randhk.github.io/annie/img/sub1_footerNav_bg.svg");
     background-repeat: no-repeat;
-    height: 22vh;
+    height: 15vh;
     background-size: 27%;
     transition: all .3s;
+    min-height: 15vh;
+    max-height: 18vh;
 }
 
 .page-nav-wrap .page-nav-area a {
@@ -306,7 +313,20 @@ footer .copyright {
 footer .foot-inner .footer-logo img {
     width: 120px;
 }
-
+@media screen and (min-width:769px) and (max-width:1024px) {
+    .page-nav-wrap .page-nav-right {
+        background-position: right 70px;
+    }
+    .page-nav-wrap .page-nav-left {
+        background-position: left 70px;
+    }
+    .page-nav-wrap .page-nav-right:hover {
+        background-position: right 70px;
+    }
+    .page-nav-wrap .page-nav-left:hover {
+        background-position: left 70px;
+    }    
+}    
 @media screen and (max-width:768px) {
     header .header-inner {
         padding: 2rem;
@@ -357,9 +377,7 @@ footer .foot-inner .footer-logo img {
     .page-nav-wrap .page-nav-area:hover {
         background-image: none;
     }
-	.page-nav-wrap .page-nav-right {
-		height: 22vh;
-	}
+
 	.page-nav-wrap .page-nav-area .page-nav-text .text-top {
 		padding:0 13vw;
 		text-align: left;
