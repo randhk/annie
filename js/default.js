@@ -10,15 +10,16 @@ jQuery(document).ready(function() {
         $("#foot").load("https://randhk.github.io/annie/footer.html");
 
         
-        const elementPosition = $('header').offset();
-        $(window).scroll(function () {
-          
-            if ($(window).scrollTop() > elementPosition.top) {
-                $('header').addClass('active');
-            } else {
-                $('header').removeClass('active');
-            }
-        });
+        // const elementPosition = $('header').offset();
+        // $(window).scroll(function (e) {
+        //      e.preventDefault();
+        //     if ($(window).scrollTop() > elementPosition.top) { 
+        //         $('header').addClass('active');
+        //     } else {
+        //         $('header').removeClass('active');
+        //     }
+
+        // });
 
         $( window ).scroll( function(e) {
             e.preventDefault();

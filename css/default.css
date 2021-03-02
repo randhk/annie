@@ -93,17 +93,18 @@ a.link:hover {
 	width:35px;
 }
 header {
-	position: static;
+	position: fixed;
 	top:0;
     display:inline-block;
     width:100%;		
     z-index: 100;
+    background-color: rgba(255, 255, 255, 0.8);
 }
-header.active { 
+/*header.active { 
     position: fixed;
     top:0;
     background-color: rgba(255, 255, 255, 0.8);
- }
+ }*/
 header .header-inner {
     max-width: 1140px;
     margin: 0 auto;
@@ -218,11 +219,10 @@ header nav.menu a.active::after, header nav.menu a:hover::after {
     flex-basis: 50%;
     background-image: url("https://randhk.github.io/annie/img/sub1_footerNav_bg.svg");
     background-repeat: no-repeat;
-    height: 15vh;
     background-size: 27%;
     transition: all .3s;
-    min-height: 15vh;
-    max-height: 18vh;
+    min-height: 150px;
+    max-height: 150px;
 }
 
 .page-nav-wrap .page-nav-area a {
@@ -349,7 +349,7 @@ footer .foot-inner .footer-logo img {
         margin: 0rem 0 8rem 0;
     }
 
-    .hireme .words {
+    .hireme .words,.hireme-sub4 .words {
         font-size: 5.5vw;
         padding: 0 2rem;
         letter-spacing: 3px;
@@ -371,7 +371,6 @@ footer .foot-inner .footer-logo img {
     .page-nav-wrap .page-nav-area {
         flex-basis: 100%;
         background-image: none;
-        height: 17vh;
     }
 
     .page-nav-wrap .page-nav-area:hover {

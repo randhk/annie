@@ -291,6 +291,7 @@
     background-size: cover;
     background-position: 200px 0;
     position: relative;
+    margin:78px 0 0 0;
 }
 
 .sub-main .main-text {
@@ -330,7 +331,7 @@
 .intro-wrap .intro-con-1 {
     background-image: url("https://randhk.github.io/annie/img/sub1_intro_bg_1.svg");
     background-position: center bottom;
-    background-attachment: fixed;
+/*    background-attachment: fixed;*/
 }
 
 .intro-wrap .intro-con-2 {
@@ -854,7 +855,7 @@
 /*sub3*/
 .sub-main-about {
     text-align: center;
-    margin: 80px 0;
+    margin: 156px 0 80px 0;
 }
 
 .sub-main-about h1 {
@@ -897,7 +898,7 @@
 
 .resume-wrap { 
     max-width: 1140px;
-    margin: 2rem auto 0rem auto;
+    margin: 8rem auto 0rem auto;
     padding: 0 2rem;
     display: grid;
     grid-template-columns:  30% 60% 1fr;
