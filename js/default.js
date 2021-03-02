@@ -20,7 +20,8 @@ jQuery(document).ready(function() {
             }
         });
 
-        $( window ).scroll( function() {
+        $( window ).scroll( function(e) {
+            e.preventDefault();
             if ( $( this ).scrollTop() > 200 ) {
                 $( '#back-to-top' ).fadeIn();
             } else {
