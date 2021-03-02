@@ -31,9 +31,9 @@ jQuery(document).ready(function() {
             
             $( '#back-to-top' ).click(function(e){
                 e.preventDefault();
-                $('html, body').stop().animate({ 
+                $('html, body').s.animate({ 
                 scrollTop: 0 
-                }, 1000);
+                }, 500);
 
             });
         });  

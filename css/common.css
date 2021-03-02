@@ -3,6 +3,7 @@
     position: relative;
     display: inline-block;
     width: 100%;
+    margin:78px 0 0 0;
 }
 
 .main .left {
@@ -1003,6 +1004,9 @@
 @media screen and (max-width:768px) {
 
     /*메인*/
+    .main{
+        margin:65px 0 0 0;
+    }
     .main .half {
         height: 400px;
         background-image: none;
