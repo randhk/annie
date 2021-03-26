@@ -75,7 +75,6 @@
     max-width: 530px;
     width: 100%;
     display: inline;
-    splay: inline-block;
     background-repeat: no-repeat;
     background-size: contain;
 }
