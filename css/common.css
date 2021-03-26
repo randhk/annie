@@ -50,7 +50,7 @@
 
 .main .half:hover .link {
     color: #fff;
-    background-color:transparent;  
+    background-color:transparent;
 }
 
 .main .link-left {
@@ -103,6 +103,87 @@
     animation: spin 3s linear infinite;
     animation-direction: reverse;
     transform-origin: 13.5% 62.5%;
+}
+
+.txt {
+    fill: #233741;
+    transition: none;
+}
+
+#text1 {
+    animation: show 3s;
+}
+
+@keyframes show {
+    to {
+        fill: #fff;
+    }
+
+    from {
+        fill: #fff;
+    }
+}
+
+#text2 {
+    animation: show 5s;
+}
+
+@keyframes show {
+    to {
+        fill: #fff;
+    }
+
+    from {
+        fill: #fff;
+    }
+}
+
+#text3 {
+    animation: show 7s;
+}
+
+@keyframes show {
+    to {
+        fill: #fff;
+    }
+
+    from {
+        fill: #fff;
+    }
+}
+
+#text4 {
+    animation: show 9s;
+}
+
+@keyframes show {
+    to {
+        fill: #233741;
+    }
+
+    from {
+        fill: #fff;
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes nod {
+    from {
+        transform: rotate(-5deg);
+    }
+
+    to {
+        transform: rotate(5deg);
+    }
 }
 
 .works {
@@ -273,9 +354,9 @@
     flex-basis: 50%;
     width: 50%;
 }
-.exp .exp-item-wrap .exp-img .swiper-button-next { right:25px; } 
+.exp .exp-item-wrap .exp-img .swiper-button-next { right:25px; }
 .exp .exp-item-wrap .exp-img .swiper-button-prev { left:25px; }
-.exp .exp-item-wrap .exp-img .swiper-button-next, 
+.exp .exp-item-wrap .exp-img .swiper-button-next,
 .exp .exp-item-wrap .exp-img .swiper-button-prev {
     color:#fafafa;
 }
@@ -505,7 +586,7 @@
 .exp .exp-item-con1-01 .contribute .progress .bar {
       width: 90%;
       animation-name: progress-90;
-}   
+}
 
 .exp .exp-item-con1-01 .contribute .progress .bar::after {
     content: '90%';
@@ -815,7 +896,7 @@
     margin-bottom: 40px;
 }
 
-.resume-wrap { 
+.resume-wrap {
     max-width: 1140px;
     margin: 8rem auto 0rem auto;
     padding: 0 2rem;
@@ -945,7 +1026,7 @@
         white-space: nowrap;
          color: #79C8A4;
     }
-    
+
 /*    .main .left {
         background-image: url("https://randhk.github.io/annie/img/annie_main_bg_left.svg");
     }
@@ -1042,7 +1123,7 @@
         flex-basis: 100%;
         max-width: 100%;
     }
-    .exp .exp-item-wrap .exp-img .swiper-button-next, 
+    .exp .exp-item-wrap .exp-img .swiper-button-next,
     .exp .exp-item-wrap .exp-img .swiper-button-prev {
         display: none;
     }
@@ -1087,7 +1168,7 @@
     .about-wrap .link-wrap {
         text-align: center;
     }
-    .resume-wrap { 
+    .resume-wrap {
         grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
         column-gap: 0;
         margin: 6.5rem auto 8rem auto;
