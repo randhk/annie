@@ -86,7 +86,7 @@
 
 .main .main-img #pc-img .head1 {
     animation: nod 2s infinite;
-    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
     transform-origin: 30% 30%;
 }
 
@@ -101,7 +101,7 @@
 
 .main .main-img #pc-img .spinner-re {
     animation: spin 3s linear infinite;
-    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
     transform-origin: 13.5% 62.5%;
 }
 
