@@ -105,7 +105,7 @@
     transform-origin: 13.5% 62.5%;
 }
 
-.txt {
+/* .txt {
     fill: #233741;
     transition: none;
 }
@@ -165,7 +165,7 @@
         fill: #fff;
     }
 }
-
+ */
 @keyframes spin {
     from {
         transform: rotate(0);
