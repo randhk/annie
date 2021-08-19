@@ -190,6 +190,7 @@
     background-position: 200px 0;
     position: relative;
     margin:77px 0 0 0;
+    display:flex;
 }
 
 .sub-main .main-text {
