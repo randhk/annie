@@ -1135,3 +1135,8 @@
     }
 
 }
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .intro-wrap .intro-con-2 { 
+        display:none; 
+    }
+}
