@@ -38,7 +38,7 @@ jQuery(document).ready(function() {
             });
         });  
 
-	    var swiper = new Swiper('.swiper-container', {
+	    const swiper = new Swiper('.swiper', {
 	      pagination: {
 	        el: '.swiper-pagination',
 	      },
